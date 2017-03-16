@@ -1,0 +1,30 @@
+@media screen and (max-width: 1920px){
+	.menu1 {
+		margin-top: 3%;
+	}
+	.menu2 {
+		margin-top: 7%;
+	}
+	.menu2 li:hover .podmen {
+		left: 11%;
+	}
+	.caption{
+		font-size: 220px;
+		left: calc(50% - 87% /2);
+		width: 87%;
+		top: 0%;
+	}
+	.Modern-Slider .PrevArrow{
+		top: 50%;
+		height: 7%;
+	}
+	.Modern-Slider .NextArrow{
+		top: 50%;
+		height: 7%;
+	}
+	.img-fill img {
+		min-height: 100%;
+		width: 57%;
+		padding-top: 6%;
+	}
+}

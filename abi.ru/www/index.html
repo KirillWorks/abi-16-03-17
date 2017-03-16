@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abi</title>
+    <link rel="stylesheet" type="text/css" href="style/style_default.css" />
+	<link rel="stylesheet" media="(min-width: 1895px)" href="style/style_1920.css" />
+	<!-- <link rel="stylesheet" media="(max-width: 1680px) and (min-width: 1600px)" href="style_1650.css" />
+	<link rel="stylesheet" media="(max-width: 1000px)" href="style_1000.css" /> -->
+    <link href="image/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="style/animate.min.css"></script>
+	<script src="js/slick.js"></script>
+	<script src="js/main.js"></script>
+	<script type="text/javascript">
+		function slyLink() {
+			var istS = 'Источник:'; // Слово должно находится в кавычках!
+			var copyR = '© какой-либо текст'; // Название сайта - слово должно находится в кавычках!
+			var body_element = document.getElementsByTagName('body')[0];
+			var choose;
+			choose = window.getSelection();
+			var myLink = document.location.href;
+			var authorLink = "" + istS + ' ' + ""+myLink+"" + copyR;
+			var copytext = choose + authorLink;
+			var addDiv = document.createElement('div');
+			addDiv.style.position = 'absolute';
+			addDiv.style.left = '-99999px';
+			body_element.appendChild(addDiv);
+			addDiv.innerHTML = copytext;
+			choose.selectAllChildren(addDiv);
+			window.setTimeout(function() {
+				body_element.removeChild(addDiv);
+			},0);
+		}
+		document.oncopy = slyLink;
+	</script>
+    </head>	
+<body>
+<div class="main">
+	<div class="equalize">
+		<div class="eq1"></div>
+		<div class="eq2"></div>
+		<div class="eq3"></div>
+		<div class="eq4"></div>
+		<div class="eq5"></div>
+		<div class="eq6"></div>
+		<div class="eq7"></div>
+		<div class="eq8"></div>
+		<div class="eq9"></div>
+		<div class="eq10"></div>
+		<div class="eq11"></div>
+		<div class="eq12"></div>
+		<div class="eq13"></div>
+		<div class="eq14"></div>
+		<div class="eq15"></div>
+		<div class="eq16"></div>
+		<div class="eq17"></div>
+		<div class="eq18"></div>
+		<div class="eq19"></div>
+		<div class="eq20"></div>
+		<div class="eq20"></div>
+		<div class="eq21"></div>
+		<div class="eq22"></div>
+		<div class="eq23"></div>
+		<div class="eq24"></div>
+		<div class="eq25"></div>
+	</div>
+	<div class="header">
+		<a href="/">
+			<img class="logo" src="image/logo.png" alt="Logo">
+		</a>
+		<div class="menu">
+			<ul class="menu1 clearfix">
+				<li>
+					<a class="active" href="index.html">Работа</a>
+				</li>
+				<li>
+					<a href="keys.html">Кейсы</a>
+				</li>
+				<li>
+					<a href="#">Студия</a>
+				</li>
+				<li>
+					<a href="contakts.html">Контакты</a>
+				</li>
+			</ul>
+			
+			<ul class="menu2">
+			     <li><a href="#">Мы делаем<span class="line-menu2"></span></a></li>
+				<li>Highload
+					<div class="podmen">
+						<div id="triangle_down"></div>
+						<span style="color:#4D4D4D;">Высоконагруженные сайты</span>	
+					</div>
+				</li>
+                <li><a href="#">E-commerce</a></li>
+                <li><a href="#">Приложение</a></li>
+                <li><a href="#">Бизнес-сайты</a></li>
+                <li><a href="#">Сервис</a></li>
+                <li><a href="#">Стартапы</a></li>
+                <li><a href="#">Интерфейсы</a></li>
+			</ul>
+			<button class="hamburger">&#9776;</button>
+			<button class="cross">&#735;</button>
+		</div>
+		<div class="language">
+		    <div class="language-text">
+		        <p>язык сайта</p>
+		        <span class="text-active">русский</span>
+		        <span class="text-notactive">английский</span>
+		        <span class="text-notactive">казахский</span>
+		    </div>
+		    <div class="language-icon">
+		        <div class="rus">
+		            <img class="icon-active" src="image/rus.png" width="36" height="36" alt="rus">
+		        </div>
+		        <div class="usa">
+		            <img class="icon-notactive" src="image/usa.png" width="36" height="36" alt="usa">
+		        </div>
+		        <div class="kaz">
+		            <img class="icon-notactive" src="image/kaz.png" width="36" height="36" alt="kaz">
+		        </div>
+		    </div>
+		</div>
+	</div>
+			
+	<div class="Modern-Slider">
+		<!-- Item -->
+		<div class="item">
+			<div class="img-fill">
+				<img src="image/sehrgut.png" alt="Zehrgut"/>
+				<span class="text1">Компания по доставке еды</span>
+				<span class="text2">Период разработки 2 мес.</span>
+				<span class="text3">Уточнить стоимость проекта</span>
+				<span class="text4"><a href="keys.html#1">Перейти в кейсы</a></span>
+				<div class="caption">SEHR GUT</div>
+			</div>
+		</div>
+		<!-- Item -->
+		<!-- Item -->
+		<div class="item">
+			<div class="img-fill">
+				<img src="image/adamieva.png" alt="Adam&Eva"/>
+				<span class="text1">Компания по доставке еды</span>
+				<span class="text2">Период разработки ? мес.</span>
+				<span class="text3">Уточнить стоимость проекта</span>
+				<span class="text4"><a href="">Перейти в кейсы</a></span>
+				<div class="caption">ADAM & EVA</div>
+			</div>
+		</div>
+		<!-- Item -->
+		<!-- Item -->
+		<div class="item">
+			<div class="img-fill">
+				<img src="image/dvvmarket.png" alt="DvvMarket" />
+				<span class="text1">Компания по доставке еды</span>
+				<span class="text2">Период разработки ? мес.</span>
+				<span class="text3">Уточнить стоимость проекта</span>
+				<span class="text4"><a href="">Перейти в кейсы</a></span>
+				<div class="caption">DVV MARKET</div>
+			</div>
+		</div>
+		<!-- Item -->
+		<!-- Item -->
+		<div class="item">
+			<div class="img-fill">
+				<img src="image/sevtrevel.png" alt="SevTrevel"/>
+				<span class="text1">Компания по доставке еды</span>
+				<span class="text2">Период разработки ? мес.</span>
+				<span class="text3">Уточнить стоимость проекта</span>
+				<span class="text4"><a href="">Перейти в кейсы</a></span>
+				<div class="caption">SEV TREVEL</div>
+			</div>
+		</div>
+		<!-- Item -->
+		<!-- Item -->
+		<div class="item">
+			<div class="img-fill">
+				<img src="image/altena.png" alt="Altena"/>
+				<span class="text1">Компания по доставке еды</span>
+				<span class="text2">Период разработки ? мес.</span>
+				<span class="text3">Уточнить стоимость проекта</span>
+				<span class="text4"><a href="">Перейти в кейсы</a></span>
+				<div class="caption">ALTENA</div>
+			</div>
+		</div>
+		<!-- Item -->
+		<!-- Item -->
+		<div class="item">
+			<div class="img-fill">
+				<img src="image/elsi.png" alt="Elsi"/>
+				<span class="text1">Компания по доставке еды</span>
+				<span class="text2">Период разработки ? мес.</span>
+				<span class="text3">Уточнить стоимость проекта</span>
+				<span class="text4"><a href="">Перейти в кейсы</a></span>
+				<div class="caption">ЭЛСИ</div>
+			</div>
+		</div>
+		<!-- Item -->
+		<!-- Item -->
+		<div class="item">
+			<div class="img-fill">
+				<img src="image/nkk.png" alt="H.K.K."/>
+				<span class="text1">Компания по доставке еды</span>
+				<span class="text2">Период разработки ? мес.</span>
+				<span class="text3">Уточнить стоимость проекта</span>
+				<span class="text4"><a href="">Перейти в кейсы</a></span>
+				<div class="caption">H.K.K.</div>
+			</div>
+		</div>
+		<!-- Item -->
+		<!-- Item -->
+		<div class="item">
+			<div class="img-fill">
+				<img src="image/emakers.png" alt="Eevent makers"/>
+				<span class="text1">Компания по доставке еды</span>
+				<span class="text2">Период разработки ? мес.</span>
+				<span class="text3">Уточнить стоимость проекта</span>
+				<span class="text4"><a href="">Перейти в кейсы</a></span>
+				<div class="caption">EVENT MAKERS</div>
+			</div>
+		</div>
+		<!-- Item -->
+		<!-- Item -->
+		<div class="item">
+			<div class="img-fill">
+				<img src="image/studiavkusa.png" alt="Studia vkusa"/>
+				<span class="text1">Компания по доставке еды</span>
+				<span class="text2">Период разработки ? мес.</span>
+				<span class="text3">Уточнить стоимость проекта</span>
+				<span class="text4"><a href="">Перейти в кейсы</a></span>
+				<div class="caption">STUDIA VKUSA</div>
+			</div>
+		</div>
+		<!-- Item -->
+		<!-- Item -->
+		<div class="item">
+			<div class="img-fill">
+				<img src="image/vashaswadba.png" alt="Ваша Свадьба"/>
+				<img class="img_2" src="image/gorgorod.png" alt="Ваша Свадьба Город" />
+				<span class="text1">Компания по доставке еды</span>
+				<span class="text2">Период разработки ? мес.</span>
+				<span class="text3">Уточнить стоимость проекта</span>
+				<span class="text4"><a href="">Перейти в кейсы</a></span>
+				<div class="caption">ВАША СВАДЬБА</div>
+			</div>
+		</div>
+		<!-- Item -->
+		<!-- Item -->
+		<div class="item">
+			<div class="img-fill">
+				<img src="image/zipshina.png" alt="ZipShina"/>
+				<span class="text1">Компания по доставке еды</span>
+				<span class="text2">Период разработки ? мес.</span>
+				<span class="text3">Уточнить стоимость проекта</span>
+				<span class="text4"><a href="">Перейти в кейсы</a></span>
+				<div class="caption">ZIPSHINA</div>
+			</div>
+		</div>
+		<!-- Item -->
+		<!-- Item -->
+		<div class="item">
+			<div class="img-fill">
+				<img src="image/yocapital.png" alt="Yo Capital"/>
+				<span class="text1">Компания по доставке еды</span>
+				<span class="text2">Период разработки ? мес.</span>
+				<span class="text3">Уточнить стоимость проекта</span>
+				<span class="text4"><a href="">Перейти в кейсы</a></span>
+				<div class="caption">YO. CAPITAL</div>
+			</div>
+		</div>
+		<!-- Item -->
+	</div>
+	
+	<div class="inform_cms">
+		<img class="bitrix" src="image/bitrix.png" alt="bitrix" />
+		<img class="WP" src="image/WP.png" alt="WP" />
+		<img class="opencart" src="image/opencart.png" alt="opencart" />
+		<img class="yiiframework" src="image/yii2.png" alt="yiiframework" />
+		<img class="bitrixpartners" src="image/bitrixpartners.png" alt="bitrixpartners" />
+	</div>
+</div>
+</body>
+</html>

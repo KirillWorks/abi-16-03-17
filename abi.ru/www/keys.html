@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abi</title>
+    <link rel="stylesheet" type="text/css" href="style/style_default.css" />
+	<link rel="stylesheet" media="(min-width: 1895px)" href="style/style_1920.css" />
+	<!-- <link rel="stylesheet" media="(max-width: 1680px) and (min-width: 1600px)" href="style_1650.css" />
+	<link rel="stylesheet" media="(max-width: 1000px)" href="style_1000.css" /> -->
+    <link href="image/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="style/animate.min.css"></script>
+	<script src="js/slick.js"></script>
+	<script src="js/main.js"></script>
+	<script type="text/javascript">
+		function slyLink() {
+			var istS = 'Источник:'; // Слово должно находится в кавычках!
+			var copyR = '© какой-либо текст'; // Название сайта - слово должно находится в кавычках!
+			var body_element = document.getElementsByTagName('body')[0];
+			var choose;
+			choose = window.getSelection();
+			var myLink = document.location.href;
+			var authorLink = "" + istS + ' ' + ""+myLink+"" + copyR;
+			var copytext = choose + authorLink;
+			var addDiv = document.createElement('div');
+			addDiv.style.position = 'absolute';
+			addDiv.style.left = '-99999px';
+			body_element.appendChild(addDiv);
+			addDiv.innerHTML = copytext;
+			choose.selectAllChildren(addDiv);
+			window.setTimeout(function() {
+				body_element.removeChild(addDiv);
+			},0);
+		}
+		document.oncopy = slyLink;
+	</script>
+</head>
+<body>
+<div class="main">
+	<div class="header header-keys">
+		<a href="index.html">
+			<img class="logo" src="image/logo.png" alt="Logo">
+		</a>
+		<div class="menu">
+			<ul class="menu1">
+				<li>
+					<a href="index.html">Работа</a>
+				</li>
+				<li>
+					<a class="active" href="keys.html">Кейсы</a>
+				</li>
+				<li>
+					<a href="#">Студия</a>
+				</li>
+				<li>
+					<a href="contakts.html">Контакты</a>
+				</li>
+			</ul>			
+		</div>
+		<div class="language">
+		    <div class="language-text">
+		        <p>язык сайта</p>
+		        <span class="text-active">русский</span>
+		        <span class="text-notactive">английский</span>
+		        <span class="text-notactive">казахский</span>
+		    </div>
+		    <div class="language-icon">
+		        <div class="rus">
+		            <img class="icon-active" src="image/rus.png" width="36" height="36" alt="rus">
+		        </div>
+		        <div class="usa">
+		            <img class="icon-notactive" src="image/usa.png" width="36" height="36" alt="usa">
+		        </div>
+		        <div class="kaz">
+		            <img class="icon-notactive" src="image/kaz.png" width="36" height="36" alt="kaz">
+		        </div>
+		    </div>
+		</div>
+		<button class="hamburger">&#9776;</button>
+        <button class="cross">&#735;</button>
+	</div>
+	
+	<div style="margin-top:3%;" class="Modern-Slider1">
+		<section class="page" id="1">
+			<div class="info_upr">
+				<div class="name_upr">Макет сайта для компании «Зер-Гут»
+				    <div class="site cont">
+						<a href="http://sehrgut45.ru">www.sehrgut45.ru</a>
+						<div class="task-box">
+				            <p class="task">Задача: рассказать о ...</p>
+					        <p>Гриль-бар и гостиница. Свежее пиво, вкуснейшее мясо, русский бильярд. Немного о клиенте и заказанном сайте.</p>     
+                        </div> 
+					</div>
+				</div>
+				
+				<img src="image/zergut9.jpg" alt="Zergut" />				
+				<div class="cont">		
+					
+					<div class="block_2">
+						<div class="block_2_1">
+							<p>Продуманное, удобное меню с понятной навигацией.</p>
+							<img src="image/zergut3.png" alt="Zehrgut" />
+						</div>
+						<div class="block_2_2">
+							<p>Пара слов о фотогалерее</p>
+							<img src="image/zergut4.png" alt="Zehrgut" />
+						</div>
+					</div>
+					
+					<div class="block_3">
+						<p>Кейтеринг коротко</p>
+						<img src="image/zergut5.png" alt="Zehrgut" />
+					</div>
+					
+					<div class="block_4">
+						<p>Об афише</p>
+						<img src="image/zergut6.png" alt="Zehrgut" />
+					</div>
+					
+					<div class="block_5">
+						<p>Как мы дегустировали гриль-меню и отмечали завершение проекта. (Фото)</p>
+						<img src="image/zergut7.png" alt="Zehrgut" />
+						<img src="image/zergut8.png" alt="Zehrgut" />
+					</div>
+				</div>
+				
+				<div class="tipo-footer">
+				<div class="footer-line"></div>
+					<div class="info_creat">
+						<p class="p3">Над проектом работали:</p>
+						<p class="p4">Менеджер проекта<br />Имя Фамилия</p>
+						<p class="p4">Программист<br />Имя Фамилия</p>
+						<p class="p4">Дизайнер<br />Имя Фамилия</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="page" id="2">
+			<div class="info_upr">
+				<div class="name_upr">Макет сайта для компании «СевТревер»
+                  <div class="site cont">
+				         <a href="http://sehrgut45.ru">www.sev.travel.ru</a>			
+					        <div class="task-box">
+				                <p class="task">Задача:</p>
+					            <p>Разработать лендинг-пейдж для туроператора, предлагающего семейный отдых в России и за рубежом.</p>
+				                <p>Подать информацию об услугах просто и красиво, чтобы пользователь понял, что именно ему нужно и почему лучше обращаться в «СевТревел».</p>
+				                <p>Обеспечить обратную связь с потенциальными клиентами.</p>
+				                <p>Разработать логотип.</p>                    
+                            </div>                    
+                 </div>
+               </div>            
+				<img src="image/sevtravel7.jpg" alt="SevTrevel" />					
+					
+					<div class="block_2 cont">						
+							<p>Мы подробно рассказали о туристических направлениях и преимуществах тур-оператора. Но без пространных текстовых простыней. Мы аккуратно спрятали SEO-тексты за яркими картинками и удобными кнопками.</p>
+							<img src="image/sevtravel3.jpg" alt="SevTrevel" />					
+					</div>
+                    
+					<div class="block_3 cont">
+							<p>Лендинг-пейдж знакомит посетителей с акциями, спектром оказываемых услуг и отзывами клиентов компании.</p>
+							<img src="image/sevtravel4.jpg" alt="SevTrevel" />
+				    </div>
+					
+                <div class="block_3 cont">
+                    <div class="block_3_1">
+                    <img src="image/sevtravel9.jpg" alt="SevTrevel" />
+                    </div>
+                    <div class="block_3_1">
+                        <img src="image/sevtravel8.jpg" alt="SevTrevel" />
+                    </div>
+                </div>
+					<div class="block_5 cont">
+						<p>Дизайн сайта исполнен в ярких цветах – бирюзовом и коралловом – в соответствие с пожеланиями заказчика («морская вода у берега и кораллово-розовые оттенки на светлом фоне»). </p>
+						<img src="image/sevtravel5.jpg" alt="SevTrevel" />
+					</div>
+                    
+					<div class="block_6 cont">
+						<p>Атмосферу путешествий поддерживают силуэты знаменитых достопримечательностей на фоне. Предлагаем посетителю сайта в 1 клик подписаться на рассылку, чтобы первым узнавать об акциях и новостях компании.</p>
+						<img src="image/sevtravel6.jpg" alt="SevTrevel" />
+					</div>					
+					
+				</div>
+				
+				<div class="tipo-footer">
+				<div class="footer-line"></div>
+					<div class="info_creat">
+						<p class="p3">Над проектом работали:</p>
+						<p class="p4">Менеджер проекта<br />Имя Фамилия</p>
+						<p class="p4">Программист<br />Имя Фамилия</p>
+						<p class="p4">Дизайнер<br />Имя Фамилия</p>
+					</div>
+				</div>			
+		</section>
+		
+		<section class="page" id="3">
+			<div class="info_upr">
+				<div class="name_upr">Макет сайта для компании «Event Makers»
+				<div class="site cont">
+						<a href="http://www.emakers.ru">www.emakers.ru</a>
+					    <p class="task">Задача:</p>
+					    <p>Создать сайт-конструктор, позволяющий легко организовать любое мероприятие от совещания до свадьбы.</p>
+        	      </div>
+				</div>
+				<img src="image/event9.jpg" alt="EventMakers" />
+				
+				<div>					
+					<div class="block_2 cont">						
+				        <p>В основе сайта – простота и легкость дизайна. Поэксперементировав с цветами, остановились на сочетании белого, как основного, и черничного. В центре внимания – яркие фотографии площадок для мероприятий.</p>
+				        <img src="image/event3.jpg" alt="EventMakers" />						
+                    </div>
+                    
+					<div class="block_3 cont">
+						<p>На контрасте с ними – лаконичные однотонные иконки в разделе услуг и простые текстовые кнопки в меню.</p>
+						<img class="shadow" src="image/event4.jpg" alt="EventMakers" />
+					</div>
+                    
+					<div class="block_4 cont">
+						<p>За легким дизайном скрыт богатый функционал. Мы создали каталог площадок, к каждой из которых привязана карточка с информацией, фотографиями, отзывами и рейтингом. </p>
+						<img src="image/event5.jpg" alt="EventMakers" />
+						<img src="image/event6.jpg" alt="EventMakers" />
+					</div>				
+					
+					<div class="block_5 cont">
+						<p>На главной расположили фильтр для быстрого старта. Всё, что надо сделать, это указать формат мероприятия и количество человек. А сайт предложит лучшие варианты.</p>
+						<img src="image/event7.jpg" alt="EventMakers" />						
+					</div>                    
+					
+					<div class="block_6 cont">
+						<p>Разработали форму для составления сметы мероприятия. Сумма в смете меняется в зависимости от выбранных услуг. Можно легко собрать мероприятие с учетом имеющегося бюджета. По завершении, смета будет отправлена пользователю на электронную почту.<br> А для самых занятых есть опция «Заказать мероприятие под ключ».</p>
+						<img src="image/event8.jpg" alt="EventMakers" />						
+					</div>
+					
+				</div>				
+				<div class="tipo-footer">
+				    <div class="footer-line"></div>
+					<div class="info_creat">
+						<p class="p3">Над проектом работали:</p>
+						<p class="p4">Менеджер проекта<br />Имя Фамилия</p>
+						<p class="p4">Программист<br />Имя Фамилия</p>
+						<p class="p4">Дизайнер<br />Имя Фамилия</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</div>
+</body>
+</html>
