@@ -44,5 +44,12 @@ $(document).ready(function(){
         });
     });   
     
+    
+    jQuery(".eq1").mouseover(function() {
+   $(this).animate({ backgroundColor: "#0CF" }, 2000);
+});
+jQuery(".eq1").mouseleave(function() {
+   $(this).animate({ backgroundColor: "#0CF" }, 2000);
+});
         
 });

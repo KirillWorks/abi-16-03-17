@@ -85,7 +85,7 @@ a{
 	-moz-animation: equalize 18s infinite alternate ease-out;
 	-webkit-animation: equalize 18s infinite alternate ease-out;
 	-ms-animation: equalize 18s infinite alternate ease-out;
-	-o-animation: equalize 18s infinite alternate ease-out;
+	-o-animation: equalize 18s infinite alternate ease-out;  
 }
 
 .eq1{animation-delay: -1.9s; left: 0;}
@@ -93,7 +93,7 @@ a{
 .eq3{animation-delay: -1.5s; left: 8%;}
 .eq4{animation-delay: -1.3s; left: 12%;}
 .eq5{animation-delay: -1.1s; left: 16%;}
-.eq6{animation-delay: -3s; left: 20%;}
+.eq6{animation-delay: -3s;   left: 20%;}
 .eq7{animation-delay: -3.3s; left: 24%;}
 .eq8{animation-delay: -3.5s; left: 28%;}
 .eq9{animation-delay: -3.7s; left: 32%;}
@@ -106,18 +106,18 @@ a{
 .eq16{animation-delay: -2.8s; left: 60%;}
 .eq17{animation-delay: -1.5s; left: 64%;}
 .eq18{animation-delay: -1.2s; left: 68%;}
-.eq19{animation-delay: -1s; left: 72%;}
+.eq19{animation-delay: -1s;   left: 72%;}
 .eq20{animation-delay: -.8s; left: 76%;}
 .eq21{animation-delay: -4.1s; left: 80%;}
 .eq22{animation-delay: -4.4s; left: 84%;}
 .eq23{animation-delay: -4.8s; left: 88%;}
-.eq24{animation-delay: -2s; left: 92%;}
+.eq24{animation-delay: -2s;   left: 92%;}
 .eq25{animation-delay: -2.9s; left: 96%;}
-.eq26{animation-delay: -.8s; left: 76%;}
+.eq26{animation-delay: -.8s;  left: 76%;}
 .eq27{animation-delay: -1.1s; left: 80%;}
 .eq28{animation-delay: -1.4s; left: 84%;}
 .eq29{animation-delay: -1.8s; left: 88%;}
-.eq30{animation-delay: -2s; left: 92%;}
+.eq30{animation-delay: -2s;   left: 92%;}
 
 @keyframes equalize {
   0% {
@@ -524,6 +524,75 @@ a{
   }
 }
 
+/*@keyframes equalize-color {
+   0% {
+	background: linear-gradient(to bottom,  rgb(255,255,255) 0%,rgb(252, 50, 84) 100%);
+  }
+  4% {
+    background: linear-gradient(to bottom,  rgb(255,255,255) 0%,rgb(246, 5, 169) 100%);
+  }
+  8% {
+    background: linear-gradient(to bottom,  rgb(255,255,255) 0%,rgb(236, 8, 237) 100%);
+  }
+  12% {
+    background: linear-gradient(to bottom,  rgb(255,255,255) 0%,rgb(145, 23, 211) 100%);
+  }
+  16% {
+   background: linear-gradient(to bottom,  rgb(255,255,255) 0%,rgb(95, 23, 240) 100%);
+  }
+  20% {
+    background: linear-gradient(to bottom,  rgb(255,255,255) 0%,rgb(23, 45, 239) 100%);
+  }
+  24% {
+   background: linear-gradient(to bottom,  rgb(255,255,255) 0%,rgb(23, 117, 239) 100%);
+  }
+  28% {
+    background: linear-gradient(to bottom,  rgb(255,255,255) 0%,rgb(236, 8, 237) 100%);
+  }
+  32% {
+    background: linear-gradient(to bottom,  rgb(255,255,255) 0%,rgb(23, 146, 239) 100%);
+  }
+  36% {
+    background: linear-gradient(to bottom,  rgb(255,255,255) 0%,rgb(23, 218, 239) 100%);
+  }
+  40% {
+    background: linear-gradient(to bottom,  rgb(255,255,255) 0%,rgb(23, 239, 221) 100%);
+  }
+  44% {
+    background: linear-gradient(to bottom,  rgb(255,255,255) 0%,rgb(23, 239, 160) 100%);
+  }
+  48% {
+    background: linear-gradient(to bottom,  rgb(255,255,255) 0%,rgb(23, 239, 164) 100%);
+  }
+  52% {
+    background: linear-gradient(to bottom,  rgb(255,255,255) 0%,rgb(23, 239, 77) 100%);
+  }
+  56% {
+    background: linear-gradient(to bottom,  rgb(255,255,255) 0%,rgb(74, 239, 23) 100%);
+  }
+  60% {
+    background: linear-gradient(to bottom,  rgb(255,255,255) 0%,rgb(130, 252, 0) 100%);
+  }
+  64% {
+    background: linear-gradient(to bottom,  rgb(255,255,255) 0%,rgb(193, 252, 0) 100%);
+  }
+  70% {
+    background: linear-gradient(to bottom,  rgb(255,255,255) 0%,rgb(225, 255, 0) 100%);
+  }
+  75% {
+   background: linear-gradient(to bottom,  rgb(255,255,255) 0%,rgb(255, 246, 0) 100%);
+  }
+  85% {
+    background: linear-gradient(to bottom,  rgb(255,255,255) 0%,rgb(255, 144, 0) 100%);
+  }
+  95% {
+    background: linear-gradient(to bottom,  rgb(255,255,255) 0%,rgb(255, 93, 0) 100%);
+  }
+  100% {
+    background: linear-gradient(to bottom,  rgb(255,255,255) 0%,rgb(255, 0, 0) 100%);
+  }    
+    
+}*/
 
 
 .header{
