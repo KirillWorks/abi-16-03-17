@@ -631,6 +631,7 @@ a{
     margin: 0 auto;
     list-style: none;
     margin-top: 5%;
+    z-index: 15;
 }
 
 .menu1 li{
@@ -673,7 +674,7 @@ a{
   display: none;
   background:none;
   position:absolute;
-  top: 8px;
+  top: 11px;
   left: 50%;
   transform: translateX(-50%);
   line-height:45px;
@@ -690,7 +691,7 @@ a{
 .cross{
   background:none;
   position:absolute;
-  top:8px;
+  top:11px;
   left: 50%;
   transform: translateX(-50%);
   padding:7px 15px 0px 15px;
@@ -711,6 +712,7 @@ a{
     padding: 5px 0;
     text-align: center;
     font-weight: 600;
+    position: relative;
 }
 
 .menu2 li > a{
@@ -728,14 +730,15 @@ a{
     width: 1px;
     height: 19px;
     background-color: #000;
-    right: -25px;
-    top: 1px;
+    right: 1%;
+    top: 5px;
 }
 
 .language{
     position: absolute;
     right: 45px;
     top: 35px;
+    z-index: 20;
 }
 
 .language-text{
@@ -766,12 +769,13 @@ span.text-active{
 .language-icon{
     display: inline-block;
     vertical-align: top;
+    margin-top: 7px;
 }
 
 .language-icon > div{
     display: inline-block;
     vertical-align: top;
-    margin-right: 15px;
+    margin-right: 20px;
     cursor: pointer;
 }
 
@@ -812,7 +816,7 @@ span.text-active{
 }
 
 .menu2 li:hover .podmen{ /* Выводим выпадающий пункт при наведении курсора */
-	left: 8%;
+	left: 17%;
     top: 100%;
     opacity: 1;
 }
@@ -1599,37 +1603,9 @@ input[type="submit"]:disabled{
 	cursor: pointer;
 }
 
-.Modern-Slider1 .NextArrow2{
-	position:absolute;
-    display: none;
-	bottom: 292px;
-    right: 2%;
-    width: 43px;
-    height: 25px;
-    background: url(../image/strelka_right.png) no-repeat;
-    background-size: cover;
-    border: none;
-    z-index: 5;
-	cursor: pointer;
-}
-
 .Modern-Slider1 .PrevArrow1{
 	position: absolute;    
     top: 18px;
-    left: 2%;
-    width: 43px;
-    height: 25px;
-    background: url(../image/strelka_left.png) no-repeat;
-    background-size: cover;
-    border: none;
-    z-index: 5;
-	cursor: pointer;
-}
-
-.Modern-Slider1 .PrevArrow2{
-	position: absolute;
-    display: none;
-    bottom: 292px;
     left: 2%;
     width: 43px;
     height: 25px;
@@ -1705,12 +1681,17 @@ input[type="submit"]:disabled{
         top: 13px;
     }
     
+    .telephon{
+        display: none;
+    }   
+    
 }
 
 @media screen and (max-width: 750px) {
     .menu1{
-       width: 76%;
-    }
+       width: 100%;
+    }   
+    
     
     .menu2{
         width: 92%;
@@ -1731,19 +1712,24 @@ input[type="submit"]:disabled{
         display: block;
     }
     
-    .icon-notactive{
+    .icon-open{
+       display: block; 
+    }
+    
+    .icon-hidden{
         display: none;
     }    
     
 }
 
-@media screen and (max-width: 640px) and (min-width: 361px) {
+@media screen and (max-width: 640px) and (min-width: 415px) {
     .Modern-Slider .item .img-fill {
     height: 500px;
     }
     
     .img-fill img {
         height: auto;
+        top: 55px;
     }
     
     .inform_cms{
@@ -1777,6 +1763,22 @@ input[type="submit"]:disabled{
     
 }
 
+@media screen and (max-width: 414px) {
+        
+    .language-icon{
+        margin-top: -3px;
+    }
+    
+    .hamburger{
+        top: 5px;
+    }
+    
+    .cross{
+        top: 5px;  
+    }
+}
+
+
 @media screen and (max-width: 640px) {
     .caption{
         font-size: 75px;
@@ -1784,8 +1786,8 @@ input[type="submit"]:disabled{
     }
         
     .logo {
-        width: 9%;
-        top: 9%;    
+        width: 11%;
+        top: 13px;    
     }
     
     .menu{
@@ -1801,20 +1803,38 @@ input[type="submit"]:disabled{
         display: block;
     }
     
+    .menu1-box{
+        margin-top: 12%;
+    }
+    
+    .language-icon{
+        left: 0;
+        margin-top: 7px;
+    }
+    
     .menu1{
-        width: 18%;
+        width: 100%;
         margin-top: 0;
+        padding-bottom: 15px;
         position: absolute;
         display: none;
         background-color: rgba(199, 199, 199, 1);
-        left: 140px;
-        z-index: 1000;
+        left: 0;
+        z-index:10;
+    }
+    
+    .line-menu2::after {
+        top: 2px;
     }
     
     .menu1 li{
         float: none;
         margin-top: 15px;
         width: auto;
+    }
+    
+    .menu1 li:hover{        
+      background-color: #F2F2F2;
     }
     
     .menu2 li {
@@ -1845,12 +1865,33 @@ input[type="submit"]:disabled{
     }
     
     .Modern-Slider1 .NextArrow2{
-        display: block;
-    }
-    
-    .Modern-Slider1 .PrevArrow2{
-        display: block;
-    }
+	position:absolute;
+    display: none;
+	bottom: 292px;
+    right: 2%;
+    width: 43px;
+    height: 25px;
+    background: url(../image/strelka_right.png) no-repeat;
+    background-size: cover;
+    border: none;
+    z-index: 5;
+	cursor: pointer;
+}
+
+.Modern-Slider1 .PrevArrow2{
+	position: absolute;
+    display: none;
+    bottom: 292px;
+    left: 2%;
+    width: 43px;
+    height: 25px;
+    background: url(../image/strelka_left.png) no-repeat;
+    background-size: cover;
+    border: none;
+    z-index: 5;
+	cursor: pointer;
+}
+
     
     .footer-line{
         display: block;
@@ -2014,10 +2055,6 @@ input[type="submit"]:disabled{
         font-size: 16px;
     }    
     
-    .img-fill img{
-        width: 30%;
-    }
-    
     /*****keys*******/
     
     .Modern-Slider1 .NextArrow1{
@@ -2030,6 +2067,18 @@ input[type="submit"]:disabled{
         top: 25px;
         width: 20px;
         height: 12px;        
+    }
+    
+    .Modern-Slider1 .NextArrow2{        
+        width: 20px;
+        height: 12px;
+        bottom: 297px;
+    }
+    
+    .Modern-Slider1 .PrevArrow2{        
+        width: 20px;
+        height: 12px;
+        bottom: 297px;
     }
     
     .info_creat .p4{
@@ -2071,6 +2120,26 @@ input[type="submit"]:disabled{
         width: 20.2%;
         font-size: 9px;
     }
+    
+    .text1{
+        bottom: 0%;
+        left: 26%;      
+    }
+    
+    .text2{
+        bottom: 28%;
+        left: 27%;       
+    }
+    
+    .text3{
+        bottom: 14%;
+        right: 19%;        
+    }
+    
+    .text4{
+        bottom: 7%;
+        right: 34%;        
+    }
         
 }
 
@@ -2078,7 +2147,27 @@ input[type="submit"]:disabled{
     
     .logo{
         width: 13%;
-        top: 7%;
+        top: 13px;
+    }
+    
+    .header-keys{
+        height: 40px;
+    }
+    
+    .menu2 li:hover .podmen {    
+    top: -132%;    
+    }
+    
+    .hamburger{
+        top: 2px;
+    }
+    
+    .cross{
+        top: 2px; 
+    }
+    
+    .language-icon{
+        margin-top: 5px;
     }
     
     .img-fill img{
@@ -2106,23 +2195,52 @@ input[type="submit"]:disabled{
         right: 31%;        
     }
     
-    .menu1{
-        left: 87px;
+    .menu1-box{
+        margin-top: 15%;
     }
     
+    .Modern-Slider1 .PrevArrow1 {   
+        background: url(../image/strelka_small_gr_left.png) no-repeat;
+        background-size: cover;
+        height: 21px;
+        width: 12px;
+        top: 20px;
+    }
+    
+    .Modern-Slider1 .NextArrow1 {    
+        background: url(../image/strelka_small_gr_right.png) no-repeat;
+        background-size: cover;
+        height: 21px;
+        width: 12px;
+        top: 20px;
+    }
+    
+    
     .Modern-Slider1 .NextArrow2{
-        bottom: 341px;
+        background: url(../image/strelka_small_gr_right.png) no-repeat;
+        background-size: cover;
+        height: 21px;
+        width: 12px;
+        bottom: 344px;
     }
     
     .Modern-Slider1 .PrevArrow2{
-        bottom: 341px;
+        background: url(../image/strelka_small_gr_left.png) no-repeat;
+        background-size: cover;
+        height: 21px;
+        width: 12px;
+        bottom: 344px;
     }
     
-   /* .menu2 li:first-child{
+    .line-menu2::after {
+        display: none;
+    }
+    
+    .menu2 li:first-child{
         border-bottom: 1px solid #000;
         border-right: 1px solid #000;
         padding: 4px 0;
-    }*/
+    }
     
     .menu2{
         margin-top: 15%;

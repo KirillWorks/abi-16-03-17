@@ -28,7 +28,7 @@ $(document).ready(function(){
     prevArrow:'<div class="PrevArrow1"></div> <div class="PrevArrow2"></div>',
     nextArrow:'<div class="NextArrow1"></div> <div class="NextArrow2"></div>', 
   });
-    
+    //////////////menu1
     $( ".cross" ).hide();    
     $( ".hamburger" ).click(function() {
         $( ".menu1" ).slideToggle( "slow", function() {
@@ -44,12 +44,71 @@ $(document).ready(function(){
         });
     });   
     
-    
-    jQuery(".eq1").mouseover(function() {
-   $(this).animate({ backgroundColor: "#0CF" }, 2000);
-});
-jQuery(".eq1").mouseleave(function() {
-   $(this).animate({ backgroundColor: "#0CF" }, 2000);
-});
+    $(window).resize(function(){
+
+    var w = $(window).width();
+
+    if(w > 320 && $(".menu1").is(':hidden')) {        
+        $(".hamburger").removeAttr('style');
+        $(".menu1").removeAttr('style');        
+
+    }
+
+    });
+    //////////////
+    $(".language-icon div > img").click(function() {
+       $(".language-icon div > img").removeClass();
+       $(".language-icon div > img").addClass("icon-notactive");
+       $(this).removeClass();
+       $(this).addClass("icon-active");
         
+    });
+    
+    $("#irus").click(function() {
+        $('#trus').css({
+            display:"block"
+        });
+        $('#tusa').css({
+            display:"none"
+        });
+        $('#tkaz').css({
+            display:"none"
+        });
+    });
+    
+    $("#iusa").click(function() {
+        $('#trus').css({
+            display:"none"
+        });
+        $('#tusa').css({
+            display:"block"
+        });
+        $('#tkaz').css({
+            display:"none"
+        });
+    });
+    
+    $("#ikaz").click(function() {
+        $('#trus').css({
+            display:"none"
+        });
+        $('#tusa').css({
+            display:"none"
+        });
+        $('#tkaz').css({
+            display:"block"
+        });
+    });    
+    
+    
+        if ($(window).width() < 740) {
+         $('.icon-notactive').css({display:"none"});            
+         $(".language-icon").click(function() {           
+          $(".icon-notactive").toggle("slow");  
+        });
+         
+       
+            
+        }
+
 });
