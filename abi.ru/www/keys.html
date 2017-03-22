@@ -46,36 +46,36 @@
 		    <div class="menu1-box">
 			    <ul class="menu1">
 				    <li>
-					    <a href="index.html">Работа</a>
+					    <a href="index.html" data-attr-lang="work">Работа</a>
 				    </li>
 				    <li>
-					    <a class="active" href="keys.html">Кейсы</a>
+					    <a class="active" href="keys.html" data-attr-lang="cases">Кейсы</a>
 				    </li>
 				    <li>
-					    <a href="#">Студия</a>
+					    <a href="#" data-attr-lang="studio">Студия</a>
 				    </li>
 				    <li>
-					    <a href="contakts.html">Контакты</a>
+					    <a href="contakts.html" data-attr-lang="contacts">Контакты</a>
 				    </li>
 			    </ul>			
 		    </div>
         </div>
 		<div class="language">
 		    <div class="language-text">
-		        <p>язык сайта</p>
-		        <span class="text-active">русский</span>
-		        <span class="text-notactive">английский</span>
-		        <span class="text-notactive">казахский</span>
+		        <p data-attr-lang="language">язык сайта</p>
+		        <span class="text-active" id="t-rus">русский</span>
+		        <span class="text-notactive" id="t-usa">English</span>
+		        <span class="text-notactive" id="t-kaz">Қазақ</span>
 		    </div>
 		    <div class="language-icon">
-		        <div class="rus">
-		            <img class="icon-active" src="image/rus.png" width="36" height="36" alt="rus">
+		        <div class="rus" onclick="changeLang('ru');">
+		            <img class="icon-active" id="i-rus" src="image/rus.png" width="36" height="36" alt="rus">
 		        </div>
-		        <div class="usa">
-		            <img class="icon-notactive" src="image/usa.png" width="36" height="36" alt="usa">
+		        <div class="usa" onclick="changeLang('en');">
+		            <img class="icon-notactive" id="i-usa" src="image/usa.png" width="36" height="36" alt="usa">
 		        </div>
-		        <div class="kaz">
-		            <img class="icon-notactive" src="image/kaz.png" width="36" height="36" alt="kaz">
+		        <div class="kaz" onclick="changeLang('kz');">
+		            <img class="icon-notactive" id="i-kaz" src="image/kaz.png" width="36" height="36" alt="kaz">
 		        </div>
 		    </div>
 		</div>
@@ -86,7 +86,7 @@
 	<div style="margin-top:3%;" class="Modern-Slider1">
 		<section class="page" id="1">
 			<div class="info_upr">
-				<div class="name_upr">Макет сайта для компании «Зер-Гут»
+                <div class="name_upr"><span data-attr-lang="layout">Макет сайта для компании</span> <span data-attr-lang="sehrgut">«Зер-Гут»</span>
 				    <div class="site cont">
 						<a href="http://sehrgut45.ru">www.sehrgut45.ru</a>
 						<div class="task-box">
@@ -130,10 +130,10 @@
 				<div class="tipo-footer">
 				<div class="footer-line"></div>
 					<div class="info_creat">
-						<p class="p3">Над проектом работали:</p>
-						<p class="p4">Менеджер проекта<br />Имя Фамилия</p>
-						<p class="p4">Программист<br />Имя Фамилия</p>
-						<p class="p4">Дизайнер<br />Имя Фамилия</p>
+						<p class="p3"><span data-attr-lang="workers">Над проектом работали:</span></p>
+                        <p class="p4"><span data-attr-lang="manager">Менеджер проекта</span><br />Имя Фамилия</p>
+                        <p class="p4"><span data-attr-lang="programmer">Программист</span><br />Имя Фамилия</p>
+                        <p class="p4"><span data-attr-lang="designer">Дизайнер</span><br />Имя Фамилия</p>
 					</div>
 				</div>
 			</div>
@@ -141,7 +141,7 @@
 		
 		<section class="page" id="2">
 			<div class="info_upr">
-				<div class="name_upr">Макет сайта для компании «СевТревер»
+				<div class="name_upr"><span data-attr-lang="layout">Макет сайта для компании</span> «СевТревер»
                   <div class="site cont">
 				         <a href="http://sehrgut45.ru">www.sev.travel.ru</a>			
 					        <div class="task-box">
@@ -188,17 +188,17 @@
 				<div class="tipo-footer">
 				<div class="footer-line"></div>
 					<div class="info_creat">
-						<p class="p3">Над проектом работали:</p>
-						<p class="p4">Менеджер проекта<br />Имя Фамилия</p>
-						<p class="p4">Программист<br />Имя Фамилия</p>
-						<p class="p4">Дизайнер<br />Имя Фамилия</p>
+						<p class="p3"><span data-attr-lang="workers">Над проектом работали:</span></p>
+                        <p class="p4"><span data-attr-lang="manager">Менеджер проекта</span><br />Имя Фамилия</p>
+                        <p class="p4"><span data-attr-lang="programmer">Программист</span><br />Имя Фамилия</p>
+                        <p class="p4"><span data-attr-lang="designer">Дизайнер</span><br />Имя Фамилия</p>
 					</div>
 				</div>			
 		</section>
 		
 		<section class="page" id="3">
 			<div class="info_upr">
-				<div class="name_upr">Макет сайта для компании «Event Makers»
+				<div class="name_upr"><span data-attr-lang="layout">Макет сайта для компании</span> «Event Makers»
 				<div class="site cont">
 						<a href="http://www.emakers.ru">www.emakers.ru</a>
 					    <p class="task">Задача:</p>
@@ -238,15 +238,100 @@
 				<div class="tipo-footer">
 				    <div class="footer-line"></div>
 					<div class="info_creat">
-						<p class="p3">Над проектом работали:</p>
-						<p class="p4">Менеджер проекта<br />Имя Фамилия</p>
-						<p class="p4">Программист<br />Имя Фамилия</p>
-						<p class="p4">Дизайнер<br />Имя Фамилия</p>
+                        <p class="p3"><span data-attr-lang="workers">Над проектом работали:</span></p>
+                        <p class="p4"><span data-attr-lang="manager">Менеджер проекта</span><br />Имя Фамилия</p>
+                        <p class="p4"><span data-attr-lang="programmer">Программист</span><br />Имя Фамилия</p>
+                        <p class="p4"><span data-attr-lang="designer">Дизайнер</span><br />Имя Фамилия</p>
 					</div>
 				</div>
 			</div>
 		</section>
 	</div>
 </div>
+
+<script>
+    var lang = {ru: {
+                     work:'Работа', 
+                     cases: 'Кейсы', 
+                     studio: 'Студия',
+                     contacts: 'Контакты',
+                     do: 'Мы делаем',
+                     application: 'Приложение',
+                     business: 'Бизнес-сайты',
+                     service: 'Сервис',
+                     startups: 'Стартапы',
+                     interfaces: 'Интерфейсы',
+                     language: 'язык сайта',
+                     kurgan: 'Курган',
+                     tyumen: 'Тюмень',
+                     street: 'ул. Бурова-Петрова, 112',
+                     street2: 'ул. Бурова-Петрова, 112',
+                     businessCenter: 'Региональный бизнес центр',
+                     office: 'офис',
+                     call: 'звонок по России бесплатный',
+                     ask: 'Задать вопрос',
+                     layout: 'Макет сайта для компании',
+                     sehrgut: '«Зер-Гут»',
+                     workers: 'Над проектом работали:',
+                     manager: 'Менеджер проекта',
+                     programmer: 'Программист',
+                     designer: 'Дизайнер'}, 
+                en: {
+                     work:'Job', 
+                     cases: 'Cases', 
+                     studio: 'Studio',
+                     contacts: 'Contacts',
+                     do: 'We do',
+                     application: 'Application',
+                     business: 'Business Websites',
+                     service: 'Service',
+                     startups: 'Startups',
+                     interfaces: 'Interfaces',
+                     language: 'Language of the site',
+                     kurgan: 'Kurgan',
+                     tyumen: 'Tyumen',
+                     street: 'Burova-Petrova str. 112',
+                     street2: 'Burova-Petrova str. 112',
+                     businessCenter: 'Regional Business Center',
+                     office: 'office',
+                     call: 'Call within Russia is free',
+                     ask: 'Ask a Question',
+                     layout: 'Site layout for the company',
+                     sehrgut: '«Sehr-Gut»',
+                     workers: 'The project was made by:',
+                     manager: 'Project manager',
+                     programmer: 'Programmer',
+                     designer: 'Designer'}, 
+                kz: {
+                     work: 'жұмыс', 
+                     cases: 'жағдайлары', 
+                     studio: 'студиясы',
+                     contacts: 'Байланыстар',
+                     do: 'Біз жасаймыз',
+                     application: 'қолдану',
+                     business: 'Бизнес-сайты',
+                     service: 'қызмет көрсету',
+                     startups: 'Стартаптар',
+                     interfaces: 'интерфейстер',
+                     language: 'сайт тілі',
+                     kurgan: 'Курган',
+                     tyumen: 'Тюмень',
+                     street: 'ул. Бурова-Петрова, 112',
+                     street2: 'ул. Бурова-Петрова, 112',
+                     businessCenter: 'Аймақтық бизнес орталығы',
+                     office: 'кеңсе',
+                     call: 'Wake-еркін Ресейде',
+                     ask: 'Сұрақ қою',
+                     layout: 'компания үшін сайт орналасу',
+                     sehrgut: '«Зер-Гут»',
+                     workers: 'Жоба командасы:',
+                     manager: 'Жоба менеджері',
+                     programmer: 'бағдарламашы',
+                     designer: 'Дизайнер'} 
+               };
+    defaultLang = 'en';
+    var changeLang = function(l, dict) { l=l||defaultLang; dict=dict||lang; $('[data-attr-lang]').each(function(i,el){console.log(el.getAttribute('data-attr-lang')); el.innerText = dict[l][el.getAttribute('data-attr-lang')];}) };
+    </script>
+
 </body>
 </html>

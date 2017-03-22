@@ -67,6 +67,62 @@
 		<div class="eq24"></div>
 		<div class="eq25"></div>
 	</div>
+	<div class="equalize2">
+		<div class="eq1-2"></div>
+		<div class="eq2-2"></div>
+		<div class="eq3-2"></div>
+		<div class="eq4-2"></div>
+		<div class="eq5-2"></div>
+		<div class="eq6-2"></div>
+		<div class="eq7-2"></div>
+		<div class="eq8-2"></div>
+		<div class="eq9-2"></div>
+		<div class="eq10-2"></div>
+		<div class="eq11-2"></div>
+		<div class="eq12-2"></div>
+		<div class="eq13-2"></div>
+		<div class="eq14-2"></div>
+		<div class="eq15-2"></div>
+		<div class="eq16-2"></div>
+		<div class="eq17-2"></div>
+		<div class="eq18-2"></div>
+		<div class="eq19-2"></div>
+		<div class="eq20-2"></div>
+		<div class="eq20-2"></div>
+		<div class="eq21-2"></div>
+		<div class="eq22-2"></div>
+		<div class="eq23-2"></div>
+		<div class="eq24-2"></div>
+		<div class="eq25-2"></div>
+	</div>
+	<div class="equalize3">
+		<div class="eq1-3"></div>
+		<div class="eq2-3"></div>
+		<div class="eq3-3"></div>
+		<div class="eq4-3"></div>
+		<div class="eq5-3"></div>
+		<div class="eq6-3"></div>
+		<div class="eq7-3"></div>
+		<div class="eq8-3"></div>
+		<div class="eq9-3"></div>
+		<div class="eq10-3"></div>
+		<div class="eq11-3"></div>
+		<div class="eq12-3"></div>
+		<div class="eq13-3"></div>
+		<div class="eq14-3"></div>
+		<div class="eq15-3"></div>
+		<div class="eq16-3"></div>
+		<div class="eq17-3"></div>
+		<div class="eq18-3"></div>
+		<div class="eq19-3"></div>
+		<div class="eq20-3"></div>
+		<div class="eq20-3"></div>
+		<div class="eq21-3"></div>
+		<div class="eq22-3"></div>
+		<div class="eq23-3"></div>
+		<div class="eq24-3"></div>
+		<div class="eq25-3"></div>
+	</div>
 	<div class="header">
 		<a href="/">
 			<img class="logo" src="image/logo.png" alt="Logo">
@@ -75,21 +131,21 @@
 		    <div class="menu1-box">
 			    <ul class="menu1 ">
 				    <li>
-					    <a class="active" href="index.html">Работа</a>
+					    <a class="active" href="index.html" data-attr-lang="work">Работа</a>
 				    </li>
 				    <li>
-					    <a href="keys.html">Кейсы</a>
+					    <a href="keys.html" data-attr-lang="cases">Кейсы</a>
 				    </li>
 				    <li>
-					    <a href="#">Студия</a>
+					    <a href="#" data-attr-lang="studio">Студия</a>
 				    </li>
 				    <li>
-					    <a href="contakts.html">Контакты</a>
+					    <a href="contakts.html" data-attr-lang="contacts">Контакты</a>
 				    </li>
 			    </ul>
             </div>
 			<ul class="menu2">
-			     <li class="line-menu2">Мы делаем</li>
+			     <li class="line-menu2" data-attr-lang="do">Мы делаем</li>
                 <li><a href="#modal1" class="open_modal">Highload</a>
 					<!--<div class="podmen">
 						<div id="triangle_down"></div>
@@ -97,193 +153,36 @@
 					</div>-->
 				</li>
                 <li><a href="#modal2" class="open_modal">E-commerce</a></li>
-                <li><a href="#modal3" class="open_modal">Приложение</a></li>
-                <li><a href="#modal4" class="open_modal">Бизнес-сайты</a></li>
-                <li><a href="#modal5" class="open_modal">Сервис</a></li>
-                <li><a href="#modal6" class="open_modal">Стартапы</a></li>
-                <li><a href="#modal7" class="open_modal">Интерфейсы</a></li>
+                <li><a href="#modal3" class="open_modal" data-attr-lang="application">Приложение</a></li>
+                <li><a href="#modal4" class="open_modal" data-attr-lang="business">Бизнес-сайты</a></li>
+                <li><a href="#modal5" class="open_modal" data-attr-lang="service">Сервис</a></li>
+                <li><a href="#modal6" class="open_modal" data-attr-lang="startups">Стартапы</a></li>
+                <li><a href="#modal7" class="open_modal" data-attr-lang="interfaces">Интерфейсы</a></li>
 			</ul>
 			<button class="hamburger">&#9776;</button>
 			<button class="cross">&#735;</button>
 		</div>
 		<div class="language">
 		    <div class="language-text">
-		        <p>язык сайта</p>
+		        <p data-attr-lang="language">язык сайта</p>
 		        <span class="text-active" id="t-rus">русский</span>
-		        <span class="text-notactive" id="t-usa">английский</span>
-		        <span class="text-notactive" id="t-kaz">казахский</span>
+		        <span class="text-notactive" id="t-usa">English</span>
+		        <span class="text-notactive" id="t-kaz">Қазақ</span>
 		    </div>
 		    <div class="language-icon">
-		        <div class="rus">
+		        <div class="rus" onclick="changeLang('ru');">
 		            <img class="icon-active" id="i-rus" src="image/rus.png" width="36" height="36" alt="rus">
 		        </div>
-		        <div class="usa">
+		        <div class="usa" onclick="changeLang('en');">
 		            <img class="icon-notactive" id="i-usa" src="image/usa.png" width="36" height="36" alt="usa">
 		        </div>
-		        <div class="kaz">
+		        <div class="kaz" onclick="changeLang('kz');">
 		            <img class="icon-notactive" id="i-kaz" src="image/kaz.png" width="36" height="36" alt="kaz">
 		        </div>
 		    </div>
 		</div>
-	</div>
-			
-	<div class="Modern-Slider">
-		<!-- Item -->
-		<div class="item">
-			<div class="img-fill">
-				<img src="image/sehrgut.png" alt="Zehrgut"/>
-				<span class="text1">Компания по доставке еды</span>
-				<span class="text2">Период разработки 2 мес.</span>
-				<span class="text3">Уточнить стоимость проекта</span>
-				<span class="text4"><a href="keys.html#1">Перейти в кейсы</a></span>
-				<div class="caption">SEHR GUT</div>
-			</div>
-		</div>
-		<!-- Item -->
-		<!-- Item -->
-		<div class="item">
-			<div class="img-fill">
-				<img src="image/adamieva.png" alt="Adam&Eva"/>
-				<span class="text1">Компания по доставке еды</span>
-				<span class="text2">Период разработки ? мес.</span>
-				<span class="text3">Уточнить стоимость проекта</span>
-				<span class="text4"><a href="">Перейти в кейсы</a></span>
-				<div class="caption">ADAM & EVA</div>
-			</div>
-		</div>
-		<!-- Item -->
-		<!-- Item -->
-		<div class="item">
-			<div class="img-fill">
-				<img src="image/dvvmarket.png" alt="DvvMarket" />
-				<span class="text1">Компания по доставке еды</span>
-				<span class="text2">Период разработки ? мес.</span>
-				<span class="text3">Уточнить стоимость проекта</span>
-				<span class="text4"><a href="">Перейти в кейсы</a></span>
-				<div class="caption">DVV MARKET</div>
-			</div>
-		</div>
-		<!-- Item -->
-		<!-- Item -->
-		<div class="item">
-			<div class="img-fill">
-				<img src="image/sevtrevel.png" alt="SevTrevel"/>
-				<span class="text1">Компания по доставке еды</span>
-				<span class="text2">Период разработки ? мес.</span>
-				<span class="text3">Уточнить стоимость проекта</span>
-				<span class="text4"><a href="">Перейти в кейсы</a></span>
-				<div class="caption">SEV TREVEL</div>
-			</div>
-		</div>
-		<!-- Item -->
-		<!-- Item -->
-		<div class="item">
-			<div class="img-fill">
-				<img src="image/altena.png" alt="Altena"/>
-				<span class="text1">Компания по доставке еды</span>
-				<span class="text2">Период разработки ? мес.</span>
-				<span class="text3">Уточнить стоимость проекта</span>
-				<span class="text4"><a href="">Перейти в кейсы</a></span>
-				<div class="caption">ALTENA</div>
-			</div>
-		</div>
-		<!-- Item -->
-		<!-- Item -->
-		<div class="item">
-			<div class="img-fill">
-				<img src="image/elsi.png" alt="Elsi"/>
-				<span class="text1">Компания по доставке еды</span>
-				<span class="text2">Период разработки ? мес.</span>
-				<span class="text3">Уточнить стоимость проекта</span>
-				<span class="text4"><a href="">Перейти в кейсы</a></span>
-				<div class="caption">ЭЛСИ</div>
-			</div>
-		</div>
-		<!-- Item -->
-		<!-- Item -->
-		<div class="item">
-			<div class="img-fill">
-				<img src="image/nkk.png" alt="H.K.K."/>
-				<span class="text1">Компания по доставке еды</span>
-				<span class="text2">Период разработки ? мес.</span>
-				<span class="text3">Уточнить стоимость проекта</span>
-				<span class="text4"><a href="">Перейти в кейсы</a></span>
-				<div class="caption">H.K.K.</div>
-			</div>
-		</div>
-		<!-- Item -->
-		<!-- Item -->
-		<div class="item">
-			<div class="img-fill">
-				<img src="image/emakers.png" alt="Eevent makers"/>
-				<span class="text1">Компания по доставке еды</span>
-				<span class="text2">Период разработки ? мес.</span>
-				<span class="text3">Уточнить стоимость проекта</span>
-				<span class="text4"><a href="">Перейти в кейсы</a></span>
-				<div class="caption">EVENT MAKERS</div>
-			</div>
-		</div>
-		<!-- Item -->
-		<!-- Item -->
-		<div class="item">
-			<div class="img-fill">
-				<img src="image/studiavkusa.png" alt="Studia vkusa"/>
-				<span class="text1">Компания по доставке еды</span>
-				<span class="text2">Период разработки ? мес.</span>
-				<span class="text3">Уточнить стоимость проекта</span>
-				<span class="text4"><a href="">Перейти в кейсы</a></span>
-				<div class="caption">STUDIA VKUSA</div>
-			</div>
-		</div>
-		<!-- Item -->
-		<!-- Item -->
-		<div class="item">
-			<div class="img-fill">
-				<img src="image/vashaswadba.png" alt="Ваша Свадьба"/>
-				<img class="img_2" src="image/gorgorod.png" alt="Ваша Свадьба Город" />
-				<span class="text1">Компания по доставке еды</span>
-				<span class="text2">Период разработки ? мес.</span>
-				<span class="text3">Уточнить стоимость проекта</span>
-				<span class="text4"><a href="">Перейти в кейсы</a></span>
-				<div class="caption">ВАША СВАДЬБА</div>
-			</div>
-		</div>
-		<!-- Item -->
-		<!-- Item -->
-		<div class="item">
-			<div class="img-fill">
-				<img src="image/zipshina.png" alt="ZipShina"/>
-				<span class="text1">Компания по доставке еды</span>
-				<span class="text2">Период разработки ? мес.</span>
-				<span class="text3">Уточнить стоимость проекта</span>
-				<span class="text4"><a href="">Перейти в кейсы</a></span>
-				<div class="caption">ZIPSHINA</div>
-			</div>
-		</div>
-		<!-- Item -->
-		<!-- Item -->
-		<div class="item">
-			<div class="img-fill">
-				<img src="image/yocapital.png" alt="Yo Capital"/>
-				<span class="text1">Компания по доставке еды</span>
-				<span class="text2">Период разработки ? мес.</span>
-				<span class="text3">Уточнить стоимость проекта</span>
-				<span class="text4"><a href="">Перейти в кейсы</a></span>
-				<div class="caption">YO. CAPITAL</div>
-			</div>
-		</div>
-		<!-- Item -->
-	</div>
-	
-	<div class="inform_cms">
-		<img class="bitrix" src="image/bitrix.png" alt="bitrix" />
-		<img class="WP" src="image/WP.png" alt="WP" />
-		<img class="opencart" src="image/opencart.png" alt="opencart" />
-		<img class="yiiframework" src="image/yii2.png" alt="yiiframework" />
-		<img class="bitrixpartners" src="image/bitrixpartners.png" alt="bitrixpartners" />
-	</div>
-	
-	<div id="modal1" class="modal_div">        
+		<div class="modal-box">
+		    <div id="modal1" class="modal_div">        
 	    <h3>Разработка highload-проектов</h3>
          <p>Где хороший, нужный сайт — там толпы пользователей и высокие нагрузки. А где высокие нагрузки — там не загружаются страницы, падают продажи и дымятся сервера. Ну, только если у сайта нет highload-оптимизации :) С ней проект переживет любые нагрузки.</p>
         <p>Не тормозите!</p> 
@@ -477,8 +376,7 @@
         <p>Если у вас есть проект, который кто-то завалил;</p>
         <p>Если у вас есть ТЗ на 50 листов или прототип, или набросок на салфетке...</p>
         <p>Это — именно такой проект, которые мы больше всего любим, а главное, умеем воплощать в жизнь, при этом не напрягая по мелочам вас как автора идеи.</p>
-        <p>Как пойдет работа?</p>
-        <img src="image/bet.png" alt="" width="" height="">
+        <p>Как пойдет работа?</p>        
         <h3>В своей команде мы практикуем scrum-методологию</h3>
         <p>"Scrum (Скрам) — одна из ведущих методик гибкого программирования. Предусматривает создание программного продукта кросс-функциональной командой. При этом сама разработка разбита на временные стадии — спринты, с учётом регулярно обновляемых чётко расставленных приоритетов. Члены команды на протяжении спринта ежедневно устраивают обсуждения — «митинги». Ключевые в скрам-проекте люди: «владелец продукта», он же представитель заказчика, и скрам-мастер, который следит за соблюдением принципов Scrum и модерирует дискуссии. Каждый спринт, являющийся полноценным циклом работ от планирования до тестирования, теоретически выливается в очередную промежуточную ревизию продукта.</p>
         <p>Эксперт-шоу «Рунетология», Выпуск 77</p>
@@ -490,7 +388,6 @@
         <p>Результатом каждого спринта будет полностью рабочий и протестированный проект, в котором реализованы все функции предыдущих этапов разработки.</p>
         <p>Все предложения по улучшению проекта, высказанные вами в процессе работы, мы зафиксируем и вынесем в последующие спринты. Вы получаете возможность гибко контролировать бюджет, функциональность и сроки проекта, управляя приоритетами разработки.</p>
         <p>Вы сможете постоянно наблюдать за результатами работы над проектом на наших демо-серверах (обычно мы храним две копии проекта — текущий стабильный спринт и ежедневную сборку), кроме этого весь программный код будет доступен вам из системы контроля версий (svn).</p>        
-        <img src="image/bet.png" alt="" width="" height="">
         <h3>Чего мы хотим взамен?</h3>
         <p>Мы страстно хотим реализовывать стартапы, про которые узнают миллионы, которыми будут восхищаться. Небольшой командой высококвалифицированных фанатиков специалистов, любящих свое дело. Мы даже не против NDA (правда, это на 20% дороже).</p>
         <p>Что вы получите:</p>
@@ -520,8 +417,7 @@
         <p>Низкая скорость загрузки сайта;</p>
         <p>Проблемы с контентом.</p>
         <p>У нас есть решения для всех этих проблем, но сейчас поговорим про юзабилити, а именно про проектирование интерфейсов.</p>
-        <p>Разработка интерфейса у нас в студии выполняется по отлаженному процессу с соблюдением ряда правил:</p>
-        <img src="image/bet.png" alt="" width="" height="">
+        <p>Разработка интерфейса у нас в студии выполняется по отлаженному процессу с соблюдением ряда правил:</p>        
         <h3>Кто будет работать над вашим проектом на этапе проектирования?</h3>
         <p>Руководитель проекта, бизнес-аналитик, UI-проектировщик (разработка прототипа), технический писатель (подготовка технического задания), QA-менеджер.</p>
         <p>Выяснение ваших требований к проекту и ожиданий от него;</p>
@@ -544,8 +440,316 @@
         <p>Нужна встреча чтобы принять решение?</p>
         <p>Руководитель нашего московского офиса с удовольствием обсудит проект в удобное для вас время — звоните +7 (495) 215-22-19, или заполните форму и мы вам перезвоним. 
         А прямо сейчас вы можете обсудить ваш проект с нашим аккаунт-менеджером в онлайн-консультанте, приглашаем;)</p>
-    </div>
+        </div> 
+       </div>	
+		</div>		
+	</div>
+			
+	<div class="Modern-Slider">
+		<!-- Item -->
+		<div class="item">
+			<div class="img-fill">
+				<img src="image/sehrgut.png" alt="Zehrgut"/>
+				<span class="text1" data-attr-lang="overview1">Компания по доставке еды</span>
+                <span class="text2"><span data-attr-lang="period1">Период разработки</span> 2 <span data-attr-lang="months">мес.</span></span>
+				<span class="text3" data-attr-lang="value">Уточнить стоимость проекта</span>
+				<span class="text4"><a href="keys.html" data-attr-lang="goCases">Перейти в кейсы</a></span>
+				<div class="caption">SEHR GUT</div>
+			</div>
+		</div>
+		<!-- Item -->
+		<!-- Item -->
+		<div class="item">
+			<div class="img-fill">
+				<img src="image/adamieva.png" alt="Adam&Eva"/>
+				<span class="text1" data-attr-lang="overview2">Компания по доставке еды</span>
+				<span class="text2"><span data-attr-lang="period2">Период разработки</span> ? <span data-attr-lang="months">мес.</span></span>
+				<span class="text3" data-attr-lang="value">Уточнить стоимость проекта</span>
+				<span class="text4"><a href="keys.html" data-attr-lang="goCases">Перейти в кейсы</a></span>
+				<div class="caption">ADAM & EVA</div>
+			</div>
+		</div>
+		<!-- Item -->
+		<!-- Item -->
+		<div class="item">
+			<div class="img-fill">
+				<img src="image/dvvmarket.png" alt="DvvMarket" />
+				<span class="text1" data-attr-lang="overview3">Компания по доставке еды</span>
+				<span class="text2"><span data-attr-lang="period3">Период разработки</span> ? <span data-attr-lang="months">мес.</span></span>
+				<span class="text3" data-attr-lang="value">Уточнить стоимость проекта</span>
+				<span class="text4"><a href="keys.html" data-attr-lang="goCases">Перейти в кейсы</a></span>
+				<div class="caption">DVV MARKET</div>
+			</div>
+		</div>
+		<!-- Item -->
+		<!-- Item -->
+		<div class="item">
+			<div class="img-fill">
+				<img src="image/sevtrevel.png" alt="SevTrevel"/>
+				<span class="text1" data-attr-lang="overview4">Компания по доставке еды</span>
+				<span class="text2"><span data-attr-lang="period4">Период разработки</span> ? <span data-attr-lang="months">мес.</span></span>
+				<span class="text3" data-attr-lang="value">Уточнить стоимость проекта</span>
+				<span class="text4"><a href="keys.html" data-attr-lang="goCases">Перейти в кейсы</a></span>
+				<div class="caption">SEV TREVEL</div>
+			</div>
+		</div>
+		<!-- Item -->
+		<!-- Item -->
+		<div class="item">
+			<div class="img-fill">
+				<img src="image/altena.png" alt="Altena"/>
+				<span class="text1" data-attr-lang="overview5">Компания по доставке еды</span>
+				<span class="text2"><span data-attr-lang="period5">Период разработки</span> ? <span data-attr-lang="months">мес.</span></span>
+				<span class="text3" data-attr-lang="value">Уточнить стоимость проекта</span>
+				<span class="text4"><a href="keys.html" data-attr-lang="goCases">Перейти в кейсы</a></span>
+				<div class="caption">ALTENA</div>
+			</div>
+		</div>
+		<!-- Item -->
+		<!-- Item -->
+		<div class="item">
+			<div class="img-fill">
+				<img src="image/elsi.png" alt="Elsi"/>
+				<span class="text1" data-attr-lang="overview6">Компания по доставке еды</span>
+				<span class="text2"><span data-attr-lang="period6">Период разработки</span> ? <span data-attr-lang="months">мес.</span></span>
+				<span class="text3" data-attr-lang="value">Уточнить стоимость проекта</span>
+				<span class="text4"><a href="keys.html" data-attr-lang="goCases">Перейти в кейсы</a></span>
+				<div class="caption">ЭЛСИ</div>
+			</div>
+		</div>
+		<!-- Item -->
+		<!-- Item -->
+		<div class="item">
+			<div class="img-fill">
+				<img src="image/nkk.png" alt="H.K.K."/>
+				<span class="text1" data-attr-lang="overview7">Компания по доставке еды</span>
+				<span class="text2"><span data-attr-lang="period7">Период разработки</span> ? <span data-attr-lang="months">мес.</span></span>
+				<span class="text3" data-attr-lang="value">Уточнить стоимость проекта</span>
+				<span class="text4"><a href="keys.html" data-attr-lang="goCases">Перейти в кейсы</a></span>
+				<div class="caption">H.K.K.</div>
+			</div>
+		</div>
+		<!-- Item -->
+		<!-- Item -->
+		<div class="item">
+			<div class="img-fill">
+				<img src="image/emakers.png" alt="Eevent makers"/>
+				<span class="text1" data-attr-lang="overview8">Компания по доставке еды</span>
+				<span class="text2"><span data-attr-lang="period8">Период разработки</span> ? <span data-attr-lang="months">мес.</span></span>
+				<span class="text3" data-attr-lang="value">Уточнить стоимость проекта</span>
+				<span class="text4"><a href="keys.html" data-attr-lang="goCases">Перейти в кейсы</a></span>
+				<div class="caption">EVENT MAKERS</div>
+			</div>
+		</div>
+		<!-- Item -->
+		<!-- Item -->
+		<div class="item">
+			<div class="img-fill">
+				<img src="image/studiavkusa.png" alt="Studia vkusa"/>
+				<span class="text1" data-attr-lang="overview9">Компания по доставке еды</span>
+				<span class="text2"><span data-attr-lang="period9">Период разработки</span> ? <span data-attr-lang="months">мес.</span></span>
+				<span class="text3" data-attr-lang="value">Уточнить стоимость проекта</span>
+				<span class="text4"><a href="keys.html" data-attr-lang="goCases">Перейти в кейсы</a></span>
+				<div class="caption">STUDIA VKUSA</div>
+			</div>
+		</div>
+		<!-- Item -->
+		<!-- Item -->
+		<div class="item">
+			<div class="img-fill">
+				<img src="image/vashaswadba.png" alt="Ваша Свадьба"/>
+				<img class="img_2" src="image/gorgorod.png" alt="Ваша Свадьба Город" />
+				<span class="text1" data-attr-lang="overview10">Компания по доставке еды</span>
+				<span class="text2"><span data-attr-lang="period10">Период разработки</span> ? <span data-attr-lang="months">мес.</span></span>
+				<span class="text3" data-attr-lang="value">Уточнить стоимость проекта</span>
+				<span class="text4"><a href="keys.html" data-attr-lang="goCases">Перейти в кейсы</a></span>
+				<div class="caption">ВАША СВАДЬБА</div>
+			</div>
+		</div>
+		<!-- Item -->
+		<!-- Item -->
+		<div class="item">
+			<div class="img-fill">
+				<img src="image/zipshina.png" alt="ZipShina"/>
+				<span class="text1" data-attr-lang="overview11">Компания по доставке еды</span>
+				<span class="text2"><span data-attr-lang="period11">Период разработки</span> ? <span data-attr-lang="months">мес.</span></span>
+				<span class="text3" data-attr-lang="value">Уточнить стоимость проекта</span>
+				<span class="text4"><a href="keys.html" data-attr-lang="goCases">Перейти в кейсы</a></span>
+				<div class="caption">ZIPSHINA</div>
+			</div>
+		</div>
+		<!-- Item -->
+		<!-- Item -->
+		<div class="item">
+			<div class="img-fill">
+				<img src="image/yocapital.png" alt="Yo Capital"/>
+				<span class="text1" data-attr-lang="overview12">Компания по доставке еды</span>
+				<span class="text2"><span data-attr-lang="period12">Период разработки</span> ? <span data-attr-lang="months">мес.</span></span>
+				<span class="text3" data-attr-lang="value">Уточнить стоимость проекта</span>
+				<span class="text4"><a href="keys.html" data-attr-lang="goCases">Перейти в кейсы</a></span>
+				<div class="caption">YO. CAPITAL</div>
+			</div>
+		</div>
+		<!-- Item -->
+	</div>
+	
+	<div class="inform_cms">
+		<img class="bitrix" src="image/bitrix.png" alt="bitrix" />
+		<img class="WP" src="image/WP.png" alt="WP" />
+		<img class="opencart" src="image/opencart.png" alt="opencart" />
+		<img class="yiiframework" src="image/yii2.png" alt="yiiframework" />
+		<img class="bitrixpartners" src="image/bitrixpartners.png" alt="bitrixpartners" />
+	</div>
+	
     <div id="overlay"></div>
-</div>
+    
+    <script>
+    var lang = {ru: {
+                     work:'Работа', 
+                     cases: 'Кейсы', 
+                     studio: 'Студия',
+                     contacts: 'Контакты',
+                     do: 'Мы делаем',
+                     application: 'Приложение',
+                     business: 'Бизнес-сайты',
+                     service: 'Сервис',
+                     startups: 'Стартапы',
+                     interfaces: 'Интерфейсы',
+                     language: 'язык сайта',
+                     kurgan: 'Курган',
+                     tyumen: 'Тюмень',
+                     street: 'ул. Бурова-Петрова, 112',
+                     street2: 'ул. Бурова-Петрова, 112',
+                     businessCenter: 'Региональный бизнес центр',
+                     office: 'офис',
+                     call: 'звонок по России бесплатный',
+                     ask: 'Задать вопрос',
+                     overview1: 'Компания по доставке еды',
+                     overview2: 'Компания по доставке еды',
+                     overview3: 'Компания по доставке еды',
+                     overview4: 'Компания по доставке еды',
+                     overview5: 'Компания по доставке еды',
+                     overview6: 'Компания по доставке еды',
+                     overview7: 'Компания по доставке еды',
+                     overview8: 'Компания по доставке еды',
+                     overview9: 'Компания по доставке еды',
+                     overview10: 'Компания по доставке еды',
+                     overview11: 'Компания по доставке еды',
+                     overview12: 'Компания по доставке еды',
+                     period1: 'Период разработки',
+                     period2: 'Период разработки',
+                     period3: 'Период разработки',
+                     period4: 'Период разработки',
+                     period5: 'Период разработки',
+                     period6: 'Период разработки',
+                     period7: 'Период разработки',
+                     period8: 'Период разработки',
+                     period9: 'Период разработки',
+                     period10: 'Период разработки',
+                     period11: 'Период разработки',
+                     period12: 'Период разработки',
+                     months: 'мес.',
+                     value: 'Уточнить стоимость проекта',
+                     goCases: 'Перейти в кейсы'}, 
+                
+                en: {
+                     work:'Job', 
+                     cases: 'Cases', 
+                     studio: 'Studio',
+                     contacts: 'Contacts',
+                     do: 'We do',
+                     application: 'Application',
+                     business: 'Business Websites',
+                     service: 'Service',
+                     startups: 'Startups',
+                     interfaces: 'Interfaces',
+                     language: 'Language of the site',
+                     kurgan: 'Kurgan',
+                     tyumen: 'Tyumen',
+                     street: 'Burova-Petrova str. 112',
+                     street2: 'Burova-Petrova str. 112',
+                     businessCenter: 'Regional Business Center',
+                     office: 'office',
+                     call: 'Call within Russia is free',
+                     ask: 'Ask a Question',
+                     overview1: 'Food delivery company',
+                     overview2: 'Food delivery company',
+                     overview3: 'Food delivery company',
+                     overview4: 'Food delivery company',
+                     overview5: 'Food delivery company',
+                     overview6: 'Food delivery company',
+                     overview7: 'Food delivery company',
+                     overview8: 'Food delivery company',
+                     overview9: 'Food delivery company',
+                     overview10: 'Food delivery company',
+                     overview11: 'Food delivery company',
+                     overview12: 'Food delivery company',
+                     period1: 'Development period',
+                     period2: 'Development period',
+                     period3: 'Development period',
+                     period4: 'Development period',
+                     period5: 'Development period',
+                     period6: 'Development period',
+                     period7: 'Development period',
+                     period8: 'Development period',
+                     period9: 'Development period',
+                     period10: 'Development period',
+                     period11: 'Development period',
+                     period12: 'Development period',
+                     months: 'Months',
+                     value: 'Specify cost of the project',
+                     goCases: 'Go to the cases'}, 
+                kz: {
+                     work: 'жұмыс', 
+                     cases: 'жағдайлары', 
+                     studio: 'студиясы',
+                     contacts: 'Байланыстар',
+                     do: 'Біз жасаймыз',
+                     application: 'қолдану',
+                     business: 'Бизнес-сайты',
+                     service: 'қызмет көрсету',
+                     startups: 'Стартаптар',
+                     interfaces: 'интерфейстер',
+                     language: 'сайт тілі',
+                     kurgan: 'Курган',
+                     tyumen: 'Тюмень',
+                     street: 'ул. Бурова-Петрова, 112',
+                     street2: 'ул. Бурова-Петрова, 112',
+                     businessCenter: 'Аймақтық бизнес орталығы',
+                     office: 'кеңсе',
+                     call: 'Wake-еркін Ресейде',
+                     ask: 'Задать вопрос',
+                     overview1: 'Азық-түлік жеткізу компанияның',
+                     overview2: 'Азық-түлік жеткізу компанияның',
+                     overview3: 'Азық-түлік жеткізу компанияның',
+                     overview4: 'Азық-түлік жеткізу компанияның',
+                     overview5: 'Азық-түлік жеткізу компанияның',
+                     overview6: 'Азық-түлік жеткізу компанияның',
+                     overview7: 'Азық-түлік жеткізу компанияның',
+                     overview8: 'Азық-түлік жеткізу компанияның',
+                     overview9: 'Азық-түлік жеткізу компанияның',
+                     overview10: 'Азық-түлік жеткізу компанияның',
+                     overview11: 'Азық-түлік жеткізу компанияның',
+                     overview12: 'Азық-түлік жеткізу компанияның',
+                     period1: 'дамыту уақыт',
+                     period2: 'дамыту уақыт',
+                     period3: 'дамыту уақыт',
+                     period4: 'дамыту уақыт',
+                     period5: 'дамыту уақыт',
+                     period6: 'дамыту уақыт',
+                     period7: 'дамыту уақыт',
+                     period8: 'дамыту уақыт',
+                     period9: 'дамыту уақыт',
+                     period10: 'дамыту уақыт',
+                     period11: 'дамыту уақыт',
+                     period12: 'дамыту уақыт',
+                     months: 'ай.',
+                     value: 'Жобаның құны көрсетіңіз',
+                     goCases: 'Жағдайларда өтіңіз'} 
+               };
+    defaultLang = 'en';
+    var changeLang = function(l, dict) { l=l||defaultLang; dict=dict||lang; $('[data-attr-lang]').each(function(i,el){console.log(el.getAttribute('data-attr-lang')); el.innerText = dict[l][el.getAttribute('data-attr-lang')];}) };
+    </script>
+    
 </body>
 </html>
