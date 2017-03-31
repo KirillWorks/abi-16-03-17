@@ -121,9 +121,9 @@ a{
 	position: absolute;
 	height: 260px;
 	background: rgb(255,255,255); /* Old browsers */
-	background: -moz-linear-gradient(top,  rgb(255,255,255) 0%, rgb(67, 206, 162) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top,  rgb(255,255,255) 0%, rgb(67, 206, 162) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom,  rgb(255,255,255) 0%, rgb(67, 206, 162) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	background: -moz-linear-gradient(top,  rgb(255,255,255) 0%, rgb(191, 255, 73) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgb(255,255,255) 0%, rgb(191, 255, 73) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgb(255,255,255) 0%, rgb(191, 255, 73) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e1ffad',GradientType=0 ); /* IE6-9 */	
 	animation: equalize2 18s infinite alternate ease-out; 
 	-moz-animation: equalize2 18s infinite alternate ease-out;
@@ -137,9 +137,9 @@ a{
 	position: absolute;
 	height: 260px;
 	background: rgb(255,255,255); /* Old browsers */
-	background: -moz-linear-gradient(top,  rgb(255,255,255) 0%, rgb(52, 229, 79) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top,  rgb(255,255,255) 0%, rgb(52, 229, 79) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom,  rgb(255,255,255) 0%, rgb(52, 229, 79) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	background: -moz-linear-gradient(top,  rgb(255,255,255) 0%, rgb(191, 242, 96) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgb(255,255,255) 0%, rgb(191, 242, 96) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgb(255,255,255) 0%, rgb(191, 242, 96) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e1ffad',GradientType=0 ); /* IE6-9 */	
 	animation: equalize2 18s infinite alternate ease-out; 
 	-moz-animation: equalize3 18s infinite alternate ease-out;
@@ -432,7 +432,7 @@ a{
   }
 }
 
-/*@-moz-keyframes equalize {
+@-moz-keyframes equalize {
   0% {
 	height: 170px;
   }
@@ -754,77 +754,63 @@ a{
   100% {
 	height: 0px;
   }
-}*/
+}
 
-/*@keyframes equalize-color {
-   0% {
-	background: linear-gradient(to bottom,  rgb(255,255,255) 0%,rgb(252, 50, 84) 100%);
-  }
-  4% {
-    background: linear-gradient(to bottom,  rgb(255,255,255) 0%,rgb(246, 5, 169) 100%);
-  }
-  8% {
-    background: linear-gradient(to bottom,  rgb(255,255,255) 0%,rgb(236, 8, 237) 100%);
-  }
-  12% {
-    background: linear-gradient(to bottom,  rgb(255,255,255) 0%,rgb(145, 23, 211) 100%);
-  }
-  16% {
-   background: linear-gradient(to bottom,  rgb(255,255,255) 0%,rgb(95, 23, 240) 100%);
-  }
-  20% {
-    background: linear-gradient(to bottom,  rgb(255,255,255) 0%,rgb(23, 45, 239) 100%);
-  }
-  24% {
-   background: linear-gradient(to bottom,  rgb(255,255,255) 0%,rgb(23, 117, 239) 100%);
-  }
-  28% {
-    background: linear-gradient(to bottom,  rgb(255,255,255) 0%,rgb(236, 8, 237) 100%);
-  }
-  32% {
-    background: linear-gradient(to bottom,  rgb(255,255,255) 0%,rgb(23, 146, 239) 100%);
-  }
-  36% {
-    background: linear-gradient(to bottom,  rgb(255,255,255) 0%,rgb(23, 218, 239) 100%);
-  }
-  40% {
-    background: linear-gradient(to bottom,  rgb(255,255,255) 0%,rgb(23, 239, 221) 100%);
-  }
-  44% {
-    background: linear-gradient(to bottom,  rgb(255,255,255) 0%,rgb(23, 239, 160) 100%);
-  }
-  48% {
-    background: linear-gradient(to bottom,  rgb(255,255,255) 0%,rgb(23, 239, 164) 100%);
-  }
-  52% {
-    background: linear-gradient(to bottom,  rgb(255,255,255) 0%,rgb(23, 239, 77) 100%);
-  }
-  56% {
-    background: linear-gradient(to bottom,  rgb(255,255,255) 0%,rgb(74, 239, 23) 100%);
-  }
-  60% {
-    background: linear-gradient(to bottom,  rgb(255,255,255) 0%,rgb(130, 252, 0) 100%);
-  }
-  64% {
-    background: linear-gradient(to bottom,  rgb(255,255,255) 0%,rgb(193, 252, 0) 100%);
-  }
-  70% {
-    background: linear-gradient(to bottom,  rgb(255,255,255) 0%,rgb(225, 255, 0) 100%);
-  }
-  75% {
-   background: linear-gradient(to bottom,  rgb(255,255,255) 0%,rgb(255, 246, 0) 100%);
-  }
-  85% {
-    background: linear-gradient(to bottom,  rgb(255,255,255) 0%,rgb(255, 144, 0) 100%);
-  }
-  95% {
-    background: linear-gradient(to bottom,  rgb(255,255,255) 0%,rgb(255, 93, 0) 100%);
-  }
-  100% {
-    background: linear-gradient(to bottom,  rgb(255,255,255) 0%,rgb(255, 0, 0) 100%);
-  }    
-    
-}*/
+.animationPopap{
+    display: block !important;
+    animation-name: fadeIn;
+    -webkit-animation-name: fadeIn;  
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;     
+    animation-timing-function: ease-in-out; 
+    -webkit-animation-timing-function: ease-in-out;    
+     animation-fill-mode:forwards;
+     
+}
+ 
+@keyframes fadeIn {
+    0% {
+        
+        transform: scale(0);
+        opacity: 0.0;       
+    }
+    60% {
+        
+        transform: scale(1.1);  
+    }
+    80% {
+        
+        transform: scale(0.9);
+        opacity: 1; 
+    }   
+    100% {
+        
+        transform: scale(1);
+        opacity: 1; 
+    }       
+}
+ 
+@-webkit-keyframes fadeIn {
+    0% {
+        
+        -webkit-transform: scale(0);
+        opacity: 0.0;       
+    }
+    60% {
+        
+        -webkit-transform: scale(1.1) );
+    }
+    80% {
+        
+        -webkit-transform: scale(0.9);
+        opacity: 1; 
+    }   
+    100% {
+        
+        -webkit-transform: scale(1);
+        opacity: 1; 
+    }       
+}
 
 
 .header{
@@ -1077,7 +1063,7 @@ span.text-active{
     position: absolute;
     left: 6%;
     bottom: 60%;
-    z-index: 100;
+    z-index: 100;    
 }
 
 .text2{
@@ -1086,8 +1072,14 @@ span.text-active{
     position: absolute;
     left: 6%;
     bottom: 55%;
-    z-index: 100;
+    z-index: 100;    
 }
+
+@-webkit-keyframes anim {
+    0% {left: 6%;}
+    100% {left: 15%;}
+}
+
 
 .text3{
 	color: #4D4D4D;
@@ -1205,7 +1197,7 @@ span.text-active{
 }
 
 .img-fill img {
-    height: 99%;
+    max-height: 99%;
     width: 45%;
     position: relative;
     display: inline-block;
@@ -1262,7 +1254,7 @@ span.text-active{
 
 .Modern-Slider .NextArrow{
 	position:absolute;
-	top: 60%;
+    bottom: 30%;
     right: 3%;
     width: 100px;
     height: 60px;
@@ -1276,7 +1268,7 @@ span.text-active{
 
 .Modern-Slider .PrevArrow{
 	position: absolute;
-    top: 60%;
+    bottom: 30%;
     left: 3%;
     width: 100px;
     height: 60px;
@@ -1588,6 +1580,35 @@ input[type="submit"]:disabled{
     position: relative;
 }
 
+.name_upr3{
+    font-family: TTDrugsThin;
+    font-size: 18px;
+    background: #F2F2F2;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.blockPhoto{
+    min-height: 500px;
+    background-color: #f0eff1;
+    /* IE9, iOS 3.2+ */
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxyYWRpYWxHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIGN4PSI1MCUiIGN5PSI1MCUiIHI9IjUwJSI+PHN0b3Agc3RvcC1jb2xvcj0iI2ZkZmRmZCIgc3RvcC1vcGFjaXR5PSIxIiBvZmZzZXQ9IjAuMzY3MDAwMDAwMDAwMDAwMDUiLz48c3RvcCBzdG9wLWNvbG9yPSIjZDNkMmQ3IiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMSIvPjwvcmFkaWFsR3JhZGllbnQ+PHJlY3QgeD0iLTUwIiB5PSItNTAiIHdpZHRoPSIxMDEiIGhlaWdodD0iMTAxIiBmaWxsPSJ1cmwoI3ZzZ2cpIiAvPjwvc3ZnPg==);
+    /* Android 2.3- hack (needed for the actual radial gradient) */
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxyYWRpYWxHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIGN4PSI1MCUiIGN5PSI1MCUiIHI9IjUwJSI+PHN0b3Agc3RvcC1jb2xvcj0iI2ZkZmRmZCIgc3RvcC1vcGFjaXR5PSIxIiBvZmZzZXQ9IjAuMzY3MDAwMDAwMDAwMDAwMDUiLz48c3RvcCBzdG9wLWNvbG9yPSIjZDNkMmQ3IiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMSIvPjwvcmFkaWFsR3JhZGllbnQ+PHJlY3QgeD0iLTUwIiB5PSItNTAiIHdpZHRoPSIxMDEiIGhlaWdodD0iMTAxIiBmaWxsPSJ1cmwoI3ZzZ2cpIiAvPjwvc3ZnPg==),
+        -webkit-gradient(radial, center center, 0, center center, 274,color-stop(0.367, rgb(253, 253, 253)),color-stop(1, rgb(211, 210, 215)));
+    /* Android 2.3 */
+    background-image: -webkit-radial-gradient(center center, ellipse farthest-side,rgb(253, 253, 253) 36.7%,rgb(211, 210, 215) 100%);
+    /* IE10+ */
+    background-image: radial-gradient(ellipse farthest-side at center center,rgb(253, 253, 253) 36.7%,rgb(211, 210, 215) 100%);
+    background-image: -ms-radial-gradient(center center, ellipse farthest-side,rgb(253, 253, 253) 36.7%,rgb(211, 210, 215) 100%);
+}
+
+.name_upr2{
+  margin-top: 70px;
+  text-align: center;
+}
+
 .info_upr img{
 	width: 100%;
 }
@@ -1892,25 +1913,43 @@ input[type="submit"]:disabled{
 	-o-animation:fadeOutLeft 1s both 1.5s;
 }
 .modal-box{
-    position: relative;
-    top: 160px;
+    position: relative;   
+    top: 154px;
 }
 .modal_div {
 	width: 64%; 
-	height: 0px; /* Рaзмеры дoлжны быть фиксирoвaны */	
+	height: 350px; /* Рaзмеры дoлжны быть фиксирoвaны */
 	background: #fff;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 30px;
+    overflow: scroll;
 	position: absolute; /* чтoбы oкнo былo в видимoй зoне в любoм месте */
-	top: -5%; /* oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт */
-	left: 50%; /* пoлoвинa экрaнa слевa */
-	transform: translateX(-50%);
+	top: 0%; /* oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт */
+	  left: 18%;/* пoлoвинa экрaнa слевa */	
 	display: none;/* в oбычнoм сoстoянии oкнa не дoлжнo быть */
 	opacity: 1; /* пoлнoстью прoзрaчнo для aнимирoвaния */
 	z-index: 50; /* oкнo дoлжнo быть нaибoлее бoльшем слoе */
     font-family: TTDrugsThin;
-    font-size: 18px;	   
+    font-size: 18px;
+    cursor: n-resize;
+    -ms-overflow-style: none;    
 }
+
+.modal_div h3{
+    margin-bottom: 15px;
+}
+
+.modal_div h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.modal_div::-webkit-scrollbar { width: 0; }
+
+
+
+
 
 /* Пoдлoжкa */
 #overlay {
@@ -1927,6 +1966,66 @@ input[type="submit"]:disabled{
 	cursor:pointer;
 	display:none; /* в oбычнoм сoстoянии её нет) */
 }
+
+.popap{  
+    width: 300px;
+    height: 385px;
+    top: 25%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    background-color: #f2f2f2;
+    position: absolute;
+    padding-top: 50px;
+    display: none;
+}
+
+.popap-input{
+    border-top: 1px solid #B3B3B3;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: -1px;
+}
+
+.popap-btn{
+    position: absolute;
+    bottom: 0px;
+    margin: 0;
+    background-color: #b32125 !important;
+    width: 100% !important;
+    cursor: pointer;
+}
+
+.close-popap{
+    position: absolute;
+    width: 20px;
+    height: 20px;   
+    top: 10px;
+    right: 5px;
+    cursor: pointer;
+}
+
+.close-popap::after{
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 2px; 
+    top: 50%;
+    background-color: #000;
+    transform: rotate(45deg);
+    
+}
+
+.close-popap::before{
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 2px;
+    top: 50%;    
+    background-color: #000;
+    transform: rotate(-45deg);    
+}
+
 
 /*-------@media-------*/
 
@@ -1961,6 +2060,11 @@ input[type="submit"]:disabled{
     .menu1{
        width: 100%;
     }   
+    
+    .popap {
+    top: 40%;
+    left: 13%;
+}
     
     
     .menu2{
@@ -2053,6 +2157,15 @@ input[type="submit"]:disabled{
     .caption{
         font-size: 75px;
         top: 15%;
+    }
+    
+    .popap-btn{
+        margin: 0 !important;
+    }
+    
+    .popap {    
+    top: 51%;
+    left: 29%;
     }
         
     .logo {
@@ -2369,7 +2482,12 @@ input[type="submit"]:disabled{
 }
 
 
-@media screen and (max-width: 479px) {    
+@media screen and (max-width: 479px) { 
+    
+    .popap {
+    top: 25%;
+    left: 13%;
+}
     
     .caption{
         font-size: 37px;
@@ -2419,7 +2537,17 @@ input[type="submit"]:disabled{
         
 }
 
-@media screen and (max-width: 360px) {    
+@media screen and (max-width: 360px) {
+    
+    .popap{
+        left: 8%;
+    }
+      
+    .popap {    
+    top: 25%;
+    
+    }
+    
     
     .logo{
         width: 13%;
