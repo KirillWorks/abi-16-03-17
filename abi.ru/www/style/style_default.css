@@ -798,7 +798,7 @@ a{
     }
     60% {
         
-        -webkit-transform: scale(1.1) );
+        -webkit-transform: scale(1.1);
     }
     80% {
         
@@ -809,8 +809,31 @@ a{
         
         -webkit-transform: scale(1);
         opacity: 1; 
-    }       
+    }
 }
+
+@-moz-keyframes fadeIn {
+    0% {
+        
+        -moz-transform: scale(0);
+        opacity: 0.0;       
+    }
+    60% {
+        
+        -moz-transform: scale(1.1);
+    }
+    80% {
+        
+        -moz-transform: scale(0.9);
+        opacity: 1; 
+    }   
+    100% {
+        
+        -moz-transform: scale(1);
+        opacity: 1; 
+    }
+}
+    
 
 
 .header{
@@ -1001,11 +1024,14 @@ span.text-active{
 
 .icon-notactive{
     -webkit-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
             filter: grayscale(100%);
+            filter: gray; /* IE 6-9 */
 }
 
 .icon-active{
     -webkit-filter:none;
+        -ms-filter:none;
             filter:none;
 }
 
@@ -1254,7 +1280,7 @@ span.text-active{
 
 .Modern-Slider .NextArrow{
 	position:absolute;
-    bottom: 30%;
+    bottom: 33%;
     right: 3%;
     width: 100px;
     height: 60px;
@@ -1268,7 +1294,7 @@ span.text-active{
 
 .Modern-Slider .PrevArrow{
 	position: absolute;
-    bottom: 30%;
+    bottom: 33%;
     left: 3%;
     width: 100px;
     height: 60px;
@@ -1913,7 +1939,8 @@ input[type="submit"]:disabled{
 	-o-animation:fadeOutLeft 1s both 1.5s;
 }
 .modal-box{
-    position: relative;   
+    position: relative;
+    width: 95%;
     top: 154px;
 }
 .modal_div {
@@ -1923,17 +1950,16 @@ input[type="submit"]:disabled{
     padding-top: 40px;
     padding-left: 20px;
     padding-right: 30px;
-    overflow: scroll;
+    overflow: auto;
 	position: absolute; /* чтoбы oкнo былo в видимoй зoне в любoм месте */
 	top: 0%; /* oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт */
-	  left: 18%;/* пoлoвинa экрaнa слевa */	
+	  left: 19%;/* пoлoвинa экрaнa слевa */	
 	display: none;/* в oбычнoм сoстoянии oкнa не дoлжнo быть */
 	opacity: 1; /* пoлнoстью прoзрaчнo для aнимирoвaния */
 	z-index: 50; /* oкнo дoлжнo быть нaибoлее бoльшем слoе */
     font-family: TTDrugsThin;
-    font-size: 18px;
-    cursor: n-resize;
-    -ms-overflow-style: none;    
+    font-size: 18px;    
+    /*-ms-overflow-style: none; */   
 }
 
 .modal_div h3{
@@ -1969,7 +1995,7 @@ input[type="submit"]:disabled{
 
 .popap{  
     width: 300px;
-    height: 385px;
+    height: 335px;
     top: 25%;
     left: 40%;
     transform: translate(-50%, -50%);
@@ -1991,9 +2017,17 @@ input[type="submit"]:disabled{
     position: absolute;
     bottom: 0px;
     margin: 0;
+    color: #fff !important;
+    padding: 20px;
+    text-transform: uppercase;
     background-color: #b32125 !important;
     width: 100% !important;
     cursor: pointer;
+}
+
+.popap-input-box{  
+    padding-left: 10px;
+    padding-right: 10px; 
 }
 
 .close-popap{
@@ -2026,10 +2060,21 @@ input[type="submit"]:disabled{
     transform: rotate(-45deg);    
 }
 
+.splash-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.splash-content p{
+    font-family: 'TTDrugsThin';
+    font-size: 35px;
+}
+
 
 /*-------@media-------*/
-
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1350px) {
     .language-text{
         display: none;
     }

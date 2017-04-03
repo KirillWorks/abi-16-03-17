@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -10,11 +10,12 @@
     <!-- <link rel="stylesheet" media="(max-width: 1680px) and (min-width: 1600px)" href="style_1650.css" />
 	<link rel="stylesheet" media="(max-width: 1000px)" href="style_1000.css" /> -->
     <link href="image/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="style/animate.min.css"></script>
+    <link type="text/css" rel="stylesheet" href="style/jquery.jscrollpane.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>    
     <script src="js/slick.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/jquery.nicescroll.min.js"></script> 
+    <script src="js/jquery.mousewheel.js"></script>     
+    <script src="js/jquery.jscrollpane.js"></script>     
     <script type="text/javascript">
         function slyLink() {
             var istS = 'Источник:'; // Слово должно находится в кавычках!
@@ -137,10 +138,10 @@
                             <a class="active" href="index.html" data-attr-lang="work">Работа</a>
                         </li>
                         <li>
-                            <a href="keys.html" data-attr-lang="cases">Кейсы</a>
+                            <a href="splash-keys.html" data-attr-lang="cases">Кейсы</a>
                         </li>
                         <li>
-                            <a href="#" data-attr-lang="studio">Студия</a>
+                            <a href="splash-studio.html" data-attr-lang="studio">Студия</a>
                         </li>
                         <li>
                             <a href="contakts.html" data-attr-lang="contacts">Контакты</a>
@@ -578,9 +579,11 @@
       
    <div class="popap">
        <form id="form">
-         <div class="close-popap"></div> 
+         <div class="close-popap"></div>
+         <div class="popap-input-box">
           <input type="text" id="name" name="name" placeholder="Представтесь, пожалуйста" required="required" value="" class="popap-input"/>
           <input type="text" id="tel" name="tel" placeholder="Ваш номер телефона" value="" class="popap-input"/>
+           </div>
           <input type="button" id="btn_submit" value="Отправить" class="popap-btn"/>
        </form>
    </div>
@@ -632,7 +635,7 @@
                 period12: 'Период разработки',
                 months: 'мес.',
                 value: 'Уточнить стоимость проекта',
-                goCases: 'Перейти в кейсы'
+                goCases: 'Перейти на сайт'
             },
 
             en: {
@@ -655,18 +658,18 @@
                 office: 'office',
                 call: 'Call within Russia is free',
                 ask: 'Ask a Question',
-                overview1: 'Food delivery company',
-                overview2: 'Food delivery company',
-                overview3: 'Food delivery company',
-                overview4: 'Food delivery company',
-                overview5: 'Food delivery company',
-                overview6: 'Food delivery company',
-                overview7: 'Food delivery company',
-                overview8: 'Food delivery company',
+                overview1: 'Grill bar and hotel',
+                overview2: 'Sex Products Store (18+)',
+                overview3: 'Internet-shop of children\'s clothes',
+                overview4: 'Tourist agency',
+                overview5: 'Application for the production of electronic plastic cards',
+                overview6: 'Internet shop of fire safety, video surveillance',
+                overview7: 'Site for rent of real estate in Sochi',
+                overview8: 'The site of the company for the celebrations',
                 overview9: 'Food delivery company',
-                overview10: 'Food delivery company',
-                overview11: 'Food delivery company',
-                overview12: 'Food delivery company',
+                overview10: 'Application for the newlyweds',
+                overview11: 'Internet shop of truck tires and wheels',
+                overview12: 'Financial Accounting Application',
                 period1: 'Development period',
                 period2: 'Development period',
                 period3: 'Development period',
@@ -681,7 +684,7 @@
                 period12: 'Development period',
                 months: 'Months',
                 value: 'Specify cost of the project',
-                goCases: 'Go to the cases'
+                goCases: 'Go to the site'
             },
             kz: {
                 work: 'жұмыс',
@@ -703,18 +706,18 @@
                 office: 'кеңсе',
                 call: 'Wake-еркін Ресейде',
                 ask: 'Задать вопрос',
-                overview1: 'Азық-түлік жеткізу компанияның',
-                overview2: 'Азық-түлік жеткізу компанияның',
-                overview3: 'Азық-түлік жеткізу компанияның',
-                overview4: 'Азық-түлік жеткізу компанияның',
-                overview5: 'Азық-түлік жеткізу компанияның',
-                overview6: 'Азық-түлік жеткізу компанияның',
-                overview7: 'Азық-түлік жеткізу компанияның',
-                overview8: 'Азық-түлік жеткізу компанияның',
+                overview1: 'Бар және Гриль және Кейтеринг',
+                overview2: 'Жыныстық тауарларды (18+) туралы Store',
+                overview3: 'Онлайн балалар киім дүкені',
+                overview4: 'Туристтік агенттік',
+                overview5: 'Электрондық карточкалар өндіру үшін қолдану',
+                overview6: 'Интернет-дүкен өртке қарсы қорғау, бейнебақылау',
+                overview7: 'Сочи қаласында Сайт жалға меншік',
+                overview8: 'мерекелеуге компанияның веб-сайты',
                 overview9: 'Азық-түлік жеткізу компанияның',
-                overview10: 'Азық-түлік жеткізу компанияның',
-                overview11: 'Азық-түлік жеткізу компанияның',
-                overview12: 'Азық-түлік жеткізу компанияның',
+                overview10: 'Жас жұбайларға арналған өтініш',
+                overview11: 'Интернет дүкен жүк шиналар мен дискілер',
+                overview12: 'Бухгалтерлік Қаржы қолдану',
                 period1: 'дамыту уақыт',
                 period2: 'дамыту уақыт',
                 period3: 'дамыту уақыт',
@@ -729,7 +732,7 @@
                 period12: 'дамыту уақыт',
                 months: 'ай.',
                 value: 'Жобаның құны көрсетіңіз',
-                goCases: 'Жағдайларда өтіңіз'
+                goCases: 'Сайтына өтіңіз'
             }
         };
         defaultLang = 'en';
