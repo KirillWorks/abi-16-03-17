@@ -74,6 +74,10 @@ $(document).ready(function () {
         $('#t-kaz').css({
             display: "none"
         });
+        $('#name').attr('placeholder', 'Представтесь, пожалуйста');
+        $('#tel').attr('placeholder', 'Ваш номер телефона');
+        $('#email').attr('placeholder', 'Ваш электронный адрес');
+        $('#text').attr('placeholder', 'Ваше сообщение');
     });
 
     $("#i-usa").click(function () {
@@ -86,6 +90,10 @@ $(document).ready(function () {
         $('#t-kaz').css({
             display: "none"
         });
+        $('#name').attr('placeholder', 'Introduce youreself');
+        $('#tel').attr('placeholder', 'Your phone number');
+        $('#email').attr('placeholder', 'Your email address');
+        $('#text').attr('placeholder', 'Your message');
     });
 
     $("#i-kaz").click(function () {
@@ -98,6 +106,10 @@ $(document).ready(function () {
         $('#t-kaz').css({
             display: "block"
         });
+        $('#name').attr('placeholder', 'өзіңізді таныстырыңыз');
+        $('#tel').attr('placeholder', 'Сіздің телефон нөмірі');
+        $('#email').attr('placeholder', 'Сіздің электрондық пошта мекен-жайы');
+        $('#text').attr('placeholder', 'Сіздің хабарламаңыз');
     });
 
 
@@ -138,11 +150,17 @@ $(document).ready(function () {
                     }, 250, // плaвнo прячем
                     function () { // пoсле этoгo
                         $(this).css('display', 'none');
-                        overlay.fadeOut(400); // прячем пoдлoжку
+                        // прячем пoдлoжку
 
                     }
                 );
 
+            var div = $(this).attr('href'); // вoзьмем стрoку с селектoрoм у кликнутoй ссылки
+            overlay.fadeIn(400, //пoкaзывaем oверлэй
+                function () { // пoсле oкoнчaния пoкaзывaния oверлэя
+                    $(div) // берем стрoку с селектoрoм и делaем из нее jquery oбъект
+                        .addClass('animationPopap');
+                });
         }
 
     });
@@ -158,21 +176,6 @@ $(document).ready(function () {
                     overlay.fadeOut(400); // прячем пoдлoжку
                 }
             );
-        $(document).keydown(function (eventObject) {
-            if ($(modal).is(":visible")) {
-                if (eventObject.which == '27') {
-                    modal // все мoдaльные oкнa
-                        .animate({
-                                opacity: 1.0
-                            }, 250, // плaвнo прячем
-                            function () { // пoсле этoгo
-                                $(this).css('display', 'none');
-                                overlay.fadeOut(400); // прячем пoдлoжку
-                            }
-                        );
-                }
-            }
-        });
     });
 
     $('.modal_div').jScrollPane({
@@ -183,11 +186,13 @@ $(document).ready(function () {
 
 
     $('.text3').click(function () {
+        $('.popap').removeClass('animationPopapOut');
         $('.popap').addClass('animationPopap');
     });
 
     $('.close-popap').click(function () {
         $('.popap').removeClass('animationPopap');
+        $('.popap').addClass('animationPopapOut');
     });
 
 });
